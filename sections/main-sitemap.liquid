@@ -1,0 +1,100 @@
+{%- if section.settings.color_bg != 'rgba(0,0,0,0)' -%}
+    {%- capture bgColor -%}
+        background-color: {{ section.settings.color_bg }};
+    {%- endcapture -%}
+{%- endif -%}
+{%- if section.settings.padding_block != blank -%}
+    {%- capture paddingblock -%}
+        padding: {{section.settings.padding_block}};
+    {%- endcapture -%}
+{%- endif -%}
+{%- if section.settings.margin_block != blank -%}
+    {%- capture marginblock -%}
+        margin: {{section.settings.margin_block}};
+    {%- endcapture -%}
+{%- endif -%}
+<section class="vela-section vela-sitemap overflow-hidden" style="{{ bgColor}} {{ paddingblock }} {{ marginblock }}">
+    <div class="container{% if section.settings.full_with %}-fluid{% endif %}">
+        <div class="vela-section__inner">
+            {%- if section.settings.menu_handle != blank -%}
+                {%- assign menuHandle = section.settings.menu_handle -%}
+                <ul class="vela-sitemap__list">
+                    {% for velaLink in linklists[menuHandle].links %}
+                        <li>
+                            <a href="{{ velaLink.url }}" title="{{ velaLink.title | escape }}">{{ velaLink.title }}</a>
+                            {%- if velaLink.links != blank -%}
+                                <ul>
+                                    {% for velaLinkChild in velaLink.links %}
+                                        <li>
+                                            <a href="{{ velaLinkChild.url }}" title="{{ velaLinkChild.title | escape }}">{{ velaLinkChild.title }}</a>
+                                            {%- if velaLinkChild.links != blank -%}
+                                                {% for velaLinkChild1 in velaLinkChild.links %}
+                                                    <li>
+                                                        <a href="{{ velaLinkChild1.url }}" title="{{ velaLinkChild1.title | escape }}">{{ velaLinkChild1.title }}</a>
+                                                        {%- if velaLinkChild1.links != blank -%}
+                                                            {% for velaLinkChild2 in velaLinkChild1.links %}
+                                                                <li>
+                                                                    <a href="{{ velaLinkChild2.url }}" title="{{ velaLinkChild2.title | escape }}">{{ velaLinkChild2.title }}</a>
+                                                                </li>
+                                                            {% endfor %}
+                                                        {%- endif -%}
+                                                    </li>
+                                                {% endfor %}
+                                            {%- endif -%}
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            {%- endif -%}
+                        </li>
+                    {% endfor %}
+                </ul>
+            {%- endif -%}
+        </div>
+    </div>
+</section>
+{% schema %}
+    {
+        "name": "Vela Sitemap",
+        "settings": [
+            {
+                "type": "header",
+                "content": "Design Section"
+            },
+            {
+                "type": "checkbox",
+                "id": "full_with",
+                "label": "Enabel Full Width?"
+            },
+            {
+                "type": "color",
+                "id": "color_bg",
+                "label": "Background Color",
+                "default": "rgba(0,0,0,0)"
+            },
+            {
+                "type": "text",
+                "id": "padding_block",
+                "label": "Padding",
+                "placeholder": "0px 0px",
+                "info": "Ex: 0px 0px 0px 0px and use desktop only"
+            },
+            {
+                "type": "text",
+                "id": "margin_block",
+                "label": "Margin",
+                "placeholder": "0px 0px",
+                "default": "0 0 30px",
+                "info": "Ex: 0px 0px 30px 0px"
+            },
+            {
+                "type": "header",
+                "content": "General Settings"
+            },
+            {
+                "type": "link_list",
+                "id": "menu_handle",
+                "label": "Choose menu"
+            }
+        ]
+    }
+{% endschema %}

@@ -1,0 +1,14 @@
+<div class="footer-link-list{% if linklist-title != blank %} accordion-footer{% endif %}">
+	{%- if linklist-title != blank -%}
+		<h6 class="footer__title py-1 py-md-3 mb-0 {% if settings.footer_bg_enable %}show_icon{% endif %}">{{ linklist-title }} {% render 'icons', icon: 'angle-left', class: "d-md-none ms-1" %}</h6>
+	{% endif %}
+	<div class="footer-link-list-content{% if linklist-title != blank %} accordion-footer__content{% endif %}">
+		<ul class="footer-links list-unstyled mb-0">
+			{% for linklist in linklists[linklist-handle].links %}
+				<li class="pt-1">
+					<a href="{{ linklist.url }}" title="">{{ linklist.title }}</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>

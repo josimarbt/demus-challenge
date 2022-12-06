@@ -1,0 +1,258 @@
+{%- capture section_style -%}
+    {%- if section.settings.color_bg != 'rgba(0,0,0,0)' -%}
+        background-color: {{ section.settings.color_bg }};
+    {%- endif -%}
+    {%- if section.settings.padding_block != blank -%}
+        padding: {{section.settings.padding_block}};
+    {%- endif -%}
+    {%- if section.settings.margin_block != blank -%}
+        margin: {{section.settings.margin_block}};
+    {%- endif -%}
+{%- endcapture -%}
+{%- if section.settings.icon_width  != blank -%}
+    {%- assign icon_width = section.settings.icon_width -%}
+{%- else -%}
+    {%- assign icon_width = "90" -%}
+{%- endif -%}
+{%- if section.settings.banner_width  != blank -%}
+    {%- assign banner_width = section.settings.banner_width -%}
+{%- else -%}
+    {%- assign banner_width = "570" -%}
+{%- endif -%}
+<div class="vela-section feature-text overflow-hidden" {% if section_style%}style="{{ section_style }}"{% endif%}>
+    <div class="container{% if section.settings.full_with %}-fluid{% endif %}">
+        <div class="vela-section__inner">
+            {%- if section.settings.heading != blank -%}
+                <div class="heading-group  mb-xl-3 pb-4">
+                    <h3 class="heading h2">
+                        <span>{{ section.settings.heading }}</span>
+                    </h3>
+                    {%- if section.settings.sub_heading != blank -%}
+                        <div class="sub-heading mb-lg-2">
+                            {{ section.settings.sub_heading }}
+                        </div>
+                    {%- endif -%}
+                </div>
+            {%- endif -%}
+            <div class="vela-section__content">
+                <div class="row g-4 align-items-center">
+                    {%- if section.blocks.size > 0 -%}
+                        <div class="col-12 col-lg-3">
+                            {% for block in section.blocks %}
+                                {%- if block.settings.featureposition == 'start' -%}
+                                    <div class="feature-text__box py-3">
+                                        <div class="feature-text__box-inner text-center text-lg-end my-lg-2">
+                                            <div class="feature-text__icon mb-3">
+                                                <div class="p-relative overflow-hidden rounded-circle d-inline-block" style="width: {{icon_width}}px; height: {{icon_width}}px;">
+                                                    {%- if block.settings.featureicon != blank -%}
+                                                        <img class="img-fluid" src="{{ block.settings.featureicon | img_url: icon_width }}" alt="" />
+                                                    {%- else -%}
+                                                        <img class="img-fluid" src="https://via.placeholder.com/{{icon_width}}x{{icon_width}}.png" alt="" />
+                                                    {%- endif -%}
+                                                </div>
+                                            </div>
+                                            {%- if block.settings.heading != blank -%}
+                                                <h5 class="feature-text__title text-uppercase"> {{ block.settings.heading }}</h5>
+                                            {%- endif -%}
+                                            {%- if block.settings.desc != blank -%}
+                                                <div class="feature-text__desc"> {{ block.settings.desc }}</div>
+                                            {%- endif -%}
+                                        </div>
+                                    </div>
+                                {%- endif -%}
+                            {% endfor%}
+                        </div>
+                    {%- endif -%}
+                    <div class="col-12 col-lg-6 tex-center">
+                        <div class="p-relative mx-auto" style="max-width: {{ banner_width }}px;">
+                            {%- if section.settings.banner != blank -%}
+                                {% include 'img-global' with image: section.settings.banner %}
+                            {%- else -%}
+                                <img class="img-fluid" src="https://via.placeholder.com/{{banner_width}}x530.jpg" alt="" />
+                            {%- endif -%}
+                        </div>
+                    </div>
+                    {%- if section.blocks.size > 0 -%}
+                        <div class="col-12 col-lg-3">
+                            {% for block in section.blocks %}
+                                {%- if block.settings.featureposition == 'end' -%}
+                                    <div class="feature-text__box py-3">
+                                        <div class="feature-text__box-inner text-center text-lg-start my-lg-2">
+                                            <div class="feature-text__icon mb-3">
+                                                <div class="p-relative overflow-hidden rounded-circle d-inline-block" style="width: {{icon_width}}px; height: {{icon_width}}px;">
+                                                    {%- if block.settings.featureicon != blank -%}
+                                                        <img class="img-fluid" src="{{ block.settings.featureicon | img_url: icon_width }}" alt="" />
+                                                    {%- else -%}
+                                                        <img class="img-fluid" src="https://via.placeholder.com/{{icon_width}}x{{icon_width}}.png" alt="" />
+                                                    {%- endif -%}
+                                                </div>
+                                            </div>
+                                            {%- if block.settings.heading != blank -%}
+                                                <h5 class="feature-text__title text-uppercase"> {{ block.settings.heading }}</h5>
+                                            {%- endif -%}
+                                            {%- if block.settings.desc != blank -%}
+                                                <div class="feature-text__desc"> {{ block.settings.desc }}</div>
+                                            {%- endif -%}
+                                        </div>
+                                    </div>
+                                {%- endif -%}
+                            {% endfor%}
+                        </div>
+                    {%- endif -%}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+    {
+        "name": "Feature text",
+        "settings": [
+            {
+                "type": "header",
+                "content": "Design Section"
+            },
+            {
+                "type": "checkbox",
+                "id": "full_with",
+                "label": "Enable Full Width?"
+            },
+            {
+                "type": "color",
+                "id": "color_bg",
+                "label": "Background Color",
+                "default": "rgba(0,0,0,0)"
+            },
+            {
+                "type": "text",
+                "id": "padding_block",
+                "label": "Padding",
+                "placeholder": "0px 0px"
+            },
+            {
+                "type": "text",
+                "id": "margin_block",
+                "label": "Margin",
+                "placeholder": "0px 0px"
+            },
+            {
+                "type": "header",
+                "content": "General Settings"
+            },
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "Heading",
+                "default": "Heading"
+            },
+            {
+                "type": "text",
+                "id": "sub_heading",
+                "label": "Sub heading",
+                "default": "sub heading"
+            },
+            {
+                "type": "image_picker",
+                "id": "banner",
+                "label": "Banner"
+            },
+            {
+                "type": "header",
+                "content": "Image size"
+            },
+            {
+                "type": "text",
+                "id": "banner_width",
+                "label": "Custom banner width(px)",
+                "default": "570"
+            },
+            {
+                "type": "text",
+                "id": "icon_width",
+                "label": "Custom icon width(px)",
+                "default": "90"
+            }
+        ],
+        "blocks": 
+        [
+            {
+                "type": "item",
+                "name": "Feature Item",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "featureicon",
+                        "label": "Icon"
+                    },
+                    {
+                        "type": "text",
+                        "id": "heading",
+                        "label": "Heading"
+                    },
+                    {
+                        "type": "html",
+                        "id": "desc",
+                        "label": "Description",
+                        "default": "<div style='text-align:center;'><h2>Use HTML to format your text so it can be easily read.</h2>This text can be used to share information about your brand with customers.</div>"
+                    },
+                    {
+                        "type": "select",
+                        "id": "featureposition",
+                        "label": "Image left",
+                        "default": "start",
+                        "options": [
+                            {
+                                "label": "Left",
+                                "value": "start"
+                            },
+                            {
+                                "label": "Right",
+                                "value": "end"
+                            }
+                        ]
+                    }
+                ]
+            }
+            
+        ],
+        "presets": [
+            {
+                "name": "Feature text",
+                "blocks": [
+                    {
+                        "type": "item",
+                        "settings": {
+                            "featureposition": "start",
+                            "heading": "Pure air",
+                            "desc": "Various versions have evolved over the years, sometimes by accident."
+                        }
+                    },
+                    {
+                        "type": "item",
+                        "settings": {
+                            "featureposition": "start",
+                            "heading": "Exquisite space",
+                            "desc": "There are many variations of passages of Lorem Ipsum available, but the ."
+                        }
+                    },
+                    {
+                        "type": "item",
+                        "settings": {
+                            "featureposition": "end",
+                            "heading": "Pure drink",
+                            "desc": "It is a long established fact that a reader will be distracted."
+                        }
+                    },
+                    {
+                        "type": "item",
+                        "settings": {
+                            "featureposition": "end",
+                            "heading": "Handy material",
+                            "desc": "Many desktop publishing packages and web page editors now use Lorem."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+{% endschema %}

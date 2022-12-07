@@ -36,10 +36,10 @@
     {{ content_for_header }}
 
     {%- liquid
-		assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
-		assign body_font_medium = settings.type_body_font | font_modify: 'weight', '500'
-		assign body_font_light = settings.type_body_font | font_modify: 'weight', '300'
-		%}
+			assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
+			assign body_font_medium = settings.type_body_font | font_modify: 'weight', '500'
+			assign body_font_light = settings.type_body_font | font_modify: 'weight', '300'
+			%}
     {% include 'css-variables' %}
 
 
@@ -60,7 +60,6 @@
     {%- endif -%}
     {% section 'announcement-bar' %}
     {% section 'header' %}
-    {% section 'image-with-text' %}
     <main id="MainContent" class="main-content content-for-layout" tabindex="-1">
       <div class="main-content__inner">
         {{ content_for_layout }}
@@ -81,5 +80,6 @@
         predictive_search_url: '{{ routes.predictive_search_url }}'
       };
     </script>
+    {% include 'custom-fonts' %}
   </body>
 </html>

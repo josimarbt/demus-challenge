@@ -52,7 +52,7 @@
                 {%- if block.settings.link != blank -%}
                 </a>
               {%- endif -%}
-              <div class="slideshow-caption {% unless block.settings.position_content %}captionPosition{% endunless %} {% if block.settings.subheading == blank and block.settings.title == blank and block.settings.title2 == blank and block.settings.desc == blank and block.settings.btn_text == blank %} noCaption{% endif %}" style="background-color: {{ block.settings.content_color }}">
+              <div class="slideshow-caption {% if block.settings.subheading == blank and block.settings.title == blank and block.settings.title2 == blank and block.settings.desc == blank and block.settings.btn_text == blank %} noCaption{% endif %}" style="background-color: {{ block.settings.content_color }}">
                 <div class="container-fluid captionWrap">
                   <div class="slideshow-caption__inner {{ block.settings.alignment }} {% unless section.settings.full_with %}px-sm-2 px-md-3 px-lg-4 px-xl-5{% endunless %}">
                     <div class="slideshow-caption__content text-{{ block.settings.text-alignment }} ">
@@ -172,13 +172,6 @@
             "info": "Only mobile"
           },
           {
-            "type": "checkbox",
-            "id": "position_content",
-            "label": "Text Over Image",
-            "default": true,
-            "info": "Only mobile"
-          },
-          {
             "type": "image_picker",
             "id": "image",
             "label": "Image Desktop",
@@ -189,7 +182,8 @@
             "id": "image_mobile",
             "label": "Image mobile",
             "info": "default image desktop.Recommend image size: 768x500"
-          }, {
+          },
+          {
             "type": "url",
             "id": "link",
             "label": "Slide URL"

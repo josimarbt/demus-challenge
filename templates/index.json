@@ -188,31 +188,31 @@
         "1d8f0827-6c8a-4e08-94c6-38b8b4339275": {
           "type": "text",
           "settings": {
-            "text": "Shop the new Brands<br>Up to 60% off now",
+            "text": "Catálogo de cajas",
             "text_style": "h3",
-            "text_color_desktop": "#161311",
-            "text_font_size_desktop": 48,
-            "margin_desktop": "0 0 37px",
-            "text_color_tablet": "#161311",
-            "text_font_size_tablet": 42,
-            "margin_tablet": "0 0 35px",
-            "text_color_mobile": "#161311",
+            "text_color_desktop": "#ffffff",
+            "text_font_size_desktop": 32,
+            "margin_desktop": "0 0 10px",
+            "text_color_tablet": "#ffffff",
+            "text_font_size_tablet": 32,
+            "margin_tablet": "0 0 10px",
+            "text_color_mobile": "#ffffff",
             "text_font_size_mobile": 32,
-            "margin_mobile": "0 0 30px"
+            "margin_mobile": "0 0 10px"
           }
         },
         "4a8478f9-725e-4d0f-9933-8730adab92cc": {
           "type": "text",
           "settings": {
-            "text": "<span class=\"letter-spacing: -1px;\">Structure almost highlights<\/span>",
+            "text": "<b>Escoge de nuestra<br>selección de cajas<br>favoritas<\/b>",
             "text_style": "text",
-            "text_color_desktop": "#54504f",
+            "text_color_desktop": "#ffffff",
             "text_font_size_desktop": 18,
             "margin_desktop": "",
-            "text_color_tablet": "#54504f",
-            "text_font_size_tablet": 17,
+            "text_color_tablet": "#ffffff",
+            "text_font_size_tablet": 18,
             "margin_tablet": "",
-            "text_color_mobile": "#54504f",
+            "text_color_mobile": "#ffffff",
             "text_font_size_mobile": 16,
             "margin_mobile": ""
           }
@@ -221,18 +221,18 @@
           "type": "button",
           "settings": {
             "button_style": "style1",
-            "button": "DISCOVER NOW",
-            "link": "",
+            "button": "Cotiza en Línea",
+            "link": "shopify:\/\/collections\/all",
             "button_font_size": 16,
             "button_padding": "0",
-            "margin": "50px 0 0",
-            "button_color": "#54504f",
-            "button_color_border": "#e3b17f",
+            "margin": "30px 0 0",
+            "button_color": "#ffffff",
+            "button_color_border": "#4ec1ba",
             "button_color_bg": "rgba(0,0,0,0)",
             "button_color_hover": "#161311",
             "button_color_border_hover": "#161311",
-            "button_color_bg_hover": "rgba(0,0,0,0)",
-            "button_font_size_mobile": 15,
+            "button_color_bg_hover": "#161311",
+            "button_font_size_mobile": 16,
             "button_padding_mobile": "0"
           }
         }

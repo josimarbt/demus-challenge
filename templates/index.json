@@ -178,7 +178,7 @@
       "settings": {
         "full_with": false,
         "color_bg": "rgba(0,0,0,0)",
-        "padding_block": "0px 20px",
+        "padding_block": "",
         "margin_block": "0 0 40px",
         "heading": "",
         "sub_heading": "",

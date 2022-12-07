@@ -129,7 +129,7 @@
         "16430737844209a302-0": {
           "type": "feature_item",
           "settings": {
-            "width": "col-12 col-lg-6",
+            "width": "col-12 col-lg-6 mb-5",
             "banner": "shopify:\/\/shop_images\/bartons-image-1.jpg",
             "button_url": "",
             "subtitle": "",
@@ -151,7 +151,7 @@
         "16430737844209a302-1": {
           "type": "feature_item",
           "settings": {
-            "width": "col-12 col-lg-6",
+            "width": "col-12 col-lg-6 mb-5",
             "banner": "shopify:\/\/shop_images\/bartons-card-2.jpg",
             "button_url": "",
             "subtitle": "",
@@ -178,8 +178,8 @@
       "settings": {
         "full_with": false,
         "color_bg": "rgba(0,0,0,0)",
-        "padding_block": "",
-        "margin_block": "0 0 30px",
+        "padding_block": "0px 20px",
+        "margin_block": "0 0 40px",
         "heading": "",
         "sub_heading": "",
         "space_between": "4"

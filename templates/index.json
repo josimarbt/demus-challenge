@@ -37,78 +37,10 @@
             "btn_border_color": "#000000",
             "btn_bg_color": "#e3b17f"
           }
-        },
-        "b20fe379-f5da-43f7-844e-97076c891927": {
-          "type": "image",
-          "settings": {
-            "content_color": "rgba(0,0,0,0)",
-            "link": "shopify:\/\/collections\/frontpage",
-            "alignment": "text-end align-middle",
-            "text-alignment": "start",
-            "slides_effect": "bottomtop",
-            "subheading": "",
-            "subheading_color": "#54504f",
-            "subheading_font_family": "text",
-            "subheading_font_size": 18,
-            "title": "",
-            "title_color": "#ffffff",
-            "title_font_family": "ff-special",
-            "title_font_size": 60,
-            "title2": "Duo Floor Lamp",
-            "title2_color": "#161311",
-            "title2_font_family": "ff-special",
-            "title2_font_size": 60,
-            "desc": "\/ TAF Studio",
-            "desc_color": "#54504f",
-            "desc_font_family": "text",
-            "desc_font_size": 24,
-            "btn_text": "Shop Now",
-            "btn_font_size": 16,
-            "btn_link": "shopify:\/\/collections\/lighting",
-            "btn_padding": "18px 44px",
-            "btn_text_color": "#161311",
-            "btn_border_color": "#e3b17f",
-            "btn_bg_color": "#e3b17f"
-          }
-        },
-        "344743bc-3b77-440d-8753-b691bca7a856": {
-          "type": "image",
-          "settings": {
-            "content_color": "rgba(0,0,0,0)",
-            "link": "shopify:\/\/collections\/make-up",
-            "alignment": "text-end align-middle",
-            "text-alignment": "start",
-            "slides_effect": "rightleft",
-            "subheading": "",
-            "subheading_color": "#54504f",
-            "subheading_font_family": "text",
-            "subheading_font_size": 18,
-            "title": "",
-            "title_color": "#000000",
-            "title_font_family": "ff-special",
-            "title_font_size": 60,
-            "title2": "Blueclay Series for<br>Normann Copenhagen",
-            "title2_color": "#161311",
-            "title2_font_family": "ff-special",
-            "title2_font_size": 60,
-            "desc": "From <span style=\"color: #161311; font-weight: 700\">$25.19<\/span>",
-            "desc_color": "#54504f",
-            "desc_font_family": "text",
-            "desc_font_size": 24,
-            "btn_text": "Shop Now",
-            "btn_font_size": 16,
-            "btn_link": "shopify:\/\/collections\/furnitures",
-            "btn_padding": "18px 44px",
-            "btn_text_color": "#161311",
-            "btn_border_color": "#e3b17f",
-            "btn_bg_color": "#e3b17f"
-          }
         }
       },
       "block_order": [
-        "cdb8181e-e404-4b9d-a53b-46b4a7406435",
-        "b20fe379-f5da-43f7-844e-97076c891927",
-        "344743bc-3b77-440d-8753-b691bca7a856"
+        "cdb8181e-e404-4b9d-a53b-46b4a7406435"
       ],
       "settings": {
         "full_with": true,

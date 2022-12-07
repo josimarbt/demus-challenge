@@ -2024,18 +2024,6 @@ h5, .h5 {
   @media (prefers-reduced-motion: reduce) {
     .slideshow-caption {
       transition: none; } }
-  @media (min-width: 768px) {
-    .slideshow-caption > .container-fluid {
-      padding-left: 50px;
-      padding-right: 50px; } }
-  @media (min-width: 1230px) {
-    .slideshow-caption > .container-fluid {
-      padding-left: 100px;
-      padding-right: 100px; } }
-  @media (min-width: 1440px) {
-    .slideshow-caption > .container-fluid {
-      padding-left: 150px;
-      padding-right: 150px; } }
   .slick-active .slideshow-caption {
     opacity: 1; }
   @media (min-width: 768px) {

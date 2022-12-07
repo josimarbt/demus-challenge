@@ -247,9 +247,9 @@
         "color_bg": "rgba(0,0,0,0)",
         "image_bg": "shopify:\/\/shop_images\/bartons-card-2.jpg",
         "bg_align": "center",
-        "padding_block": "",
-        "margin_block": "0 0 30px",
-        "space_between": "4",
+        "padding_block": "0px 20px",
+        "margin_block": "0 0 40px",
+        "space_between": "5",
         "banner_size": 6,
         "banner_size_ipad": 6,
         "banner_size_mobile": 12,
@@ -257,7 +257,7 @@
         "text_align": "start",
         "banner_mobile": "hidden",
         "banner_url": "",
-        "padding_content": "95px 0",
+        "padding_content": "30px",
         "content_color_bg": "rgba(0,0,0,0)"
       }
     },

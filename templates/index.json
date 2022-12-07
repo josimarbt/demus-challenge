@@ -123,6 +123,93 @@
         "autoplay_speed": "8000"
       }
     },
+    "1655889371d26e100b": {
+      "type": "image-with-text",
+      "blocks": {
+        "916b16cc-7159-47bd-a6cf-111a04f521c4": {
+          "type": "text",
+          "settings": {
+            "text": "Próximamente <br>\nArma tu caja",
+            "text_style": "ff-special",
+            "text_color_desktop": "#ffffff",
+            "text_font_size_desktop": 33,
+            "margin_desktop": "0 0 10px",
+            "text_color_tablet": "#ffffff",
+            "text_font_size_tablet": 33,
+            "margin_tablet": "0 0 10px",
+            "text_color_mobile": "#ffffff",
+            "text_font_size_mobile": 27,
+            "margin_mobile": "0 0 10px"
+          }
+        },
+        "22beb9cd-6dd0-4e87-b278-3f2a3a7fa705": {
+          "type": "text",
+          "settings": {
+            "text": "<b>Saca a tu yo creativo<br>y arma tu propia<br>combinación<\/b>",
+            "text_style": "text",
+            "text_color_desktop": "#ffffff",
+            "text_font_size_desktop": 18,
+            "margin_desktop": "0 0 50px",
+            "text_color_tablet": "#ffffff",
+            "text_font_size_tablet": 18,
+            "margin_tablet": "0 0 45px",
+            "text_color_mobile": "#ffffff",
+            "text_font_size_mobile": 16,
+            "margin_mobile": "0 0 35px"
+          }
+        }
+      },
+      "block_order": [
+        "916b16cc-7159-47bd-a6cf-111a04f521c4",
+        "22beb9cd-6dd0-4e87-b278-3f2a3a7fa705"
+      ],
+      "settings": {
+        "full_with": false,
+        "color_bg": "rgba(0,0,0,0)",
+        "image_bg": "shopify:\/\/shop_images\/bartons-image-1.jpg",
+        "bg_align": "center",
+        "padding_block": "0px 20px",
+        "margin_block": "0 0 30px",
+        "space_between": "4",
+        "banner_size": 4,
+        "banner_size_ipad": 5,
+        "banner_size_mobile": 2,
+        "banner_position": "left",
+        "text_align": "end",
+        "banner_mobile": "always",
+        "banner_url": "",
+        "padding_content": "95px 0",
+        "content_color_bg": "rgba(0,0,0,0)"
+      }
+    },
+    "1638198859510e66be": {
+      "type": "image-list",
+      "disabled": true,
+      "blocks": {
+        "16381988598d6cf3af-0": {
+          "type": "image",
+          "settings": {
+            "width": "col-12 col-sm-12",
+            "image": "shopify:\/\/shop_images\/bartons-image-1.jpg",
+            "link": "\/"
+          }
+        }
+      },
+      "block_order": [
+        "16381988598d6cf3af-0"
+      ],
+      "settings": {
+        "full_with": false,
+        "color_bg": "rgba(0,0,0,0)",
+        "padding_block": "0 0 20px",
+        "margin_block": "0 0 40px",
+        "image_ratio": "adapt",
+        "crop": false,
+        "effect": "effectFive",
+        "space_between": "4",
+        "custom_css": ""
+      }
+    },
     "1643043758ec2c692d": {
       "type": "product-list",
       "settings": {
@@ -245,32 +332,6 @@
         "column2": 2,
         "column3": 1,
         "column4": 2
-      }
-    },
-    "1638198859510e66be": {
-      "type": "image-list",
-      "blocks": {
-        "16381988598d6cf3af-0": {
-          "type": "image",
-          "settings": {
-            "width": "col-12 col-sm-12",
-            "link": "shopify:\/\/collections\/all"
-          }
-        }
-      },
-      "block_order": [
-        "16381988598d6cf3af-0"
-      ],
-      "settings": {
-        "full_with": false,
-        "color_bg": "rgba(0,0,0,0)",
-        "padding_block": "0 0 20px",
-        "margin_block": "0 0 40px",
-        "image_ratio": "adapt",
-        "crop": false,
-        "effect": "effectFive",
-        "space_between": "4",
-        "custom_css": ""
       }
     },
     "16555516350f5bbdad": {
@@ -639,102 +700,6 @@
         "collection_handle5": "lighting"
       }
     },
-    "1655889371d26e100b": {
-      "type": "image-with-text",
-      "disabled": true,
-      "blocks": {
-        "1655889370c33caf8b-0": {
-          "type": "text",
-          "settings": {
-            "text": "Quick parcel delivery, <span class=\"text-primary\">from $25<\/span>",
-            "text_style": "h3",
-            "text_color_desktop": "#54504f",
-            "text_font_size_desktop": 18,
-            "margin_desktop": "0 0 20px",
-            "text_color_tablet": "#54504f",
-            "text_font_size_tablet": 17,
-            "margin_tablet": "0 0 17px",
-            "text_color_mobile": "#54504f",
-            "text_font_size_mobile": 16,
-            "margin_mobile": "0 0 12px"
-          }
-        },
-        "916b16cc-7159-47bd-a6cf-111a04f521c4": {
-          "type": "text",
-          "settings": {
-            "text": "Shop the new Brands<br>Up to 60% off now",
-            "text_style": "h3",
-            "text_color_desktop": "#161311",
-            "text_font_size_desktop": 48,
-            "margin_desktop": "0 0 37px",
-            "text_color_tablet": "#161311",
-            "text_font_size_tablet": 42,
-            "margin_tablet": "0 0 30px",
-            "text_color_mobile": "#161311",
-            "text_font_size_mobile": 27,
-            "margin_mobile": "0 0 24px"
-          }
-        },
-        "22beb9cd-6dd0-4e87-b278-3f2a3a7fa705": {
-          "type": "text",
-          "settings": {
-            "text": "<span class=\"letter-spacing: -1px;\">Structure almost highlights<\/span>",
-            "text_style": "text",
-            "text_color_desktop": "#54504f",
-            "text_font_size_desktop": 18,
-            "margin_desktop": "0 0 50px",
-            "text_color_tablet": "#54504f",
-            "text_font_size_tablet": 17,
-            "margin_tablet": "0 0 45px",
-            "text_color_mobile": "#54504f",
-            "text_font_size_mobile": 16,
-            "margin_mobile": "0 0 35px"
-          }
-        },
-        "1655889370c33caf8b-1": {
-          "type": "button",
-          "settings": {
-            "button_style": "style1",
-            "button": "DISCOVER NOW",
-            "link": "",
-            "button_font_size": 16,
-            "button_padding": "0",
-            "margin": "",
-            "button_color": "#54504f",
-            "button_color_border": "#e3b17f",
-            "button_color_bg": "rgba(0,0,0,0)",
-            "button_color_hover": "#161311",
-            "button_color_border_hover": "#161311",
-            "button_color_bg_hover": "rgba(0,0,0,0)",
-            "button_font_size_mobile": 15,
-            "button_padding_mobile": "0"
-          }
-        }
-      },
-      "block_order": [
-        "1655889370c33caf8b-0",
-        "916b16cc-7159-47bd-a6cf-111a04f521c4",
-        "22beb9cd-6dd0-4e87-b278-3f2a3a7fa705",
-        "1655889370c33caf8b-1"
-      ],
-      "settings": {
-        "full_with": false,
-        "color_bg": "rgba(0,0,0,0)",
-        "bg_align": "center",
-        "padding_block": "",
-        "margin_block": "0 0 30px",
-        "space_between": "4",
-        "banner_size": 7,
-        "banner_size_ipad": 5,
-        "banner_size_mobile": 2,
-        "banner_position": "left",
-        "text_align": "start",
-        "banner_mobile": "always",
-        "banner_url": "",
-        "padding_content": "95px 0",
-        "content_color_bg": "rgba(0,0,0,0)"
-      }
-    },
     "165590180764479285": {
       "type": "heading",
       "disabled": true,
@@ -932,10 +897,11 @@
   },
   "order": [
     "162566980471ae6442",
+    "1655889371d26e100b",
+    "1638198859510e66be",
     "1643043758ec2c692d",
     "1655541131b1244a66",
     "1655548050cef186cd",
-    "1638198859510e66be",
     "16555516350f5bbdad",
     "16555532074993fed3",
     "164256418835253c35",
@@ -944,7 +910,6 @@
     "1655868725da4c1425",
     "165588485358e5bd3f",
     "165588561760ff3366",
-    "1655889371d26e100b",
     "165590180764479285",
     "1639385876881b85aa",
     "1655893328302ddbc5",

@@ -1,6 +1,6 @@
 {
     "current": {
-      "color_primary": "#e3b17f",
+      "color_primary": "#4ec1ba",
       "color_secondary": "#f57e7e",
       "color_body_text": "#54504f",
       "color_headings": "#161311",
@@ -21,8 +21,8 @@
       "color_submenu_text_hover": "#54504f",
       "color_btn_border": "#161311",
       "color_btn_bg": "#161311",
-      "color_btn_hover_border": "#e3b17f",
-      "color_btn_hover_bg": "#e3b17f",
+      "color_btn_hover_border": "#d8a383",
+      "color_btn_hover_bg": "#d8a383",
       "breadcrumb_color": "#666666",
       "breadcrumb_heading_color": "#111111",
       "breadcrumb_color_link": "#111111",
@@ -117,7 +117,6 @@
                 "banner": true,
                 "banner_order": "4",
                 "banner_col": "25",
-                "image": "shopify:\/\/shop_images\/collection-1.jpg",
                 "banner_link": "shopify:\/\/collections\/frontpage",
                 "collection_enable": false,
                 "collection_order": "5",
@@ -186,8 +185,7 @@
           "settings": {
             "fullwidth": true,
             "padding_block": "24px 0",
-            "logo": "shopify:\/\/shop_images\/logo.png",
-            "logo_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0444\/3422\/7361\/files\/logo.svg?v=1655952462",
+            "logo_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0655\/9485\/1575\/files\/logo_160x.png?v=1659541581",
             "logo_width": 130,
             "menu": "main-menu",
             "enable_sticky_header": true
@@ -211,7 +209,6 @@
               "type": "contact_info",
               "settings": {
                 "contactinfo_heading": "",
-                "contactinfo_logo": "shopify:\/\/shop_images\/logo.png",
                 "contactinfo_logo_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0444\/3422\/7361\/files\/logo.svg?v=1655952462",
                 "logo_footer_width": 110,
                 "contactinfo_desc": "",
@@ -233,14 +230,14 @@
               "type": "link_list",
               "settings": {
                 "title": "Services",
-                "menu": "services"
+                "menu": ""
               }
             },
             "3585fc7c-9bcb-4be9-9788-0e3ccc9dc68c": {
               "type": "link_list",
               "settings": {
                 "title": "About",
-                "menu": "about"
+                "menu": ""
               }
             },
             "758f0291-59d6-499b-b9be-f7f625afdce6": {
@@ -268,4 +265,4 @@
   
       ]
     }
-  }    
+  }

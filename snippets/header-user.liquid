@@ -1,0 +1,10 @@
+<div class="header-cart ms-3 ms-md-4">
+  <a class="header__icon d-flex position-relative" id="user-icon-bubble">
+    {%- render 'icons' with icon: 'user', class: 'icon user-icon', attr: 'width="20" height="20"' -%}
+  </a>
+  {%- if settings.user_type == "modal" -%}
+    <div class="header-cart__content">
+      <div class="ajaxcart-container" data-cart-container></div>
+    </div>
+  {%- endif -%}
+</div>

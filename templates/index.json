@@ -7,7 +7,8 @@
           "type": "image",
           "settings": {
             "content_color": "rgba(0,0,0,0)",
-            "position_content": true,
+            "image": "shopify:\/\/shop_images\/12_1950x_199850ba-33c4-4570-9808-6038e85fdb23.webp",
+            "image_mobile": "shopify:\/\/shop_images\/12_1950x_199850ba-33c4-4570-9808-6038e85fdb23.webp",
             "link": "shopify:\/\/collections\/all",
             "alignment": "text-start align-middle",
             "text-alignment": "start",
@@ -41,7 +42,6 @@
           "type": "image",
           "settings": {
             "content_color": "rgba(0,0,0,0)",
-            "position_content": true,
             "link": "shopify:\/\/collections\/frontpage",
             "alignment": "text-end align-middle",
             "text-alignment": "start",
@@ -75,7 +75,6 @@
           "type": "image",
           "settings": {
             "content_color": "rgba(0,0,0,0)",
-            "position_content": true,
             "link": "shopify:\/\/collections\/make-up",
             "alignment": "text-end align-middle",
             "text-alignment": "start",

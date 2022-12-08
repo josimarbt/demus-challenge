@@ -9,7 +9,7 @@
             "content_color": "rgba(0,0,0,0)",
             "image": "shopify:\/\/shop_images\/12_1950x_199850ba-33c4-4570-9808-6038e85fdb23.webp",
             "image_mobile": "shopify:\/\/shop_images\/12_1950x_199850ba-33c4-4570-9808-6038e85fdb23.webp",
-            "link": "shopify:\/\/collections\/all",
+            "link": "shopify:\/\/collections\/frontpage",
             "alignment": "text-start align-middle",
             "text-alignment": "start",
             "slides_effect": "leftright",
@@ -84,7 +84,7 @@
           "settings": {
             "width": "col-12 col-lg-6 mb-5",
             "banner": "shopify:\/\/shop_images\/bartons-card-2.jpg",
-            "button_url": "shopify:\/\/collections\/all",
+            "button_url": "shopify:\/\/collections\/frontpage",
             "subtitle": "",
             "heading_subcolor": "#54504f",
             "heading_sub_size": 16,

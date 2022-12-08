@@ -511,7 +511,7 @@
         "heading": "Nuestros clientes lindos y queridos...",
         "sub_heading": "",
         "image_ratio": "portrait",
-        "crop": false,
+        "crop": true,
         "popup": false,
         "slide_enable": true,
         "space_between": "2",

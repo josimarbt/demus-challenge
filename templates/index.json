@@ -128,7 +128,7 @@
         "collection_handle": "frontpage",
         "limit": 4,
         "product_style": "grid",
-        "button_text": "See All Products",
+        "button_text": "VER TODOS",
         "slide_enable": true,
         "navigation": true,
         "infinite": true,

@@ -43,10 +43,9 @@
         "cdb8181e-e404-4b9d-a53b-46b4a7406435"
       ],
       "settings": {
-        "full_with": true,
         "color_bg": "rgba(0,0,0,0)",
         "padding_block": "0px",
-        "margin_block": "0 0 70px",
+        "margin_block": "0 0 50px",
         "navigation": true,
         "pagination": false,
         "fade": true,

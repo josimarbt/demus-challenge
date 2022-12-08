@@ -43,6 +43,7 @@
         "cdb8181e-e404-4b9d-a53b-46b4a7406435"
       ],
       "settings": {
+        "full_with": false,
         "color_bg": "rgba(0,0,0,0)",
         "padding_block": "0px",
         "margin_block": "0 0 30px",
@@ -65,14 +66,14 @@
             "subtitle": "",
             "heading_subcolor": "#ffffff",
             "heading_sub_size": 16,
-            "title": "<h3>Proximamente<br>Arma tu caja<\/h3>",
+            "title": "Próximamente<br>Arma tu caja",
             "heading_color": "#ffffff",
             "heading_size": 33,
             "content": "<b>Saca a tu yo creativo<br>y arma tu propia<br>combinación<\/b>",
             "text_color": "#ffffff",
             "text_size": 18,
             "button": "",
-            "button_color": "#54504f",
+            "button_color": "#ffffff",
             "button_border_color": "#e3b17f",
             "text_align": "end",
             "banner_position": "over"
@@ -113,146 +114,6 @@
         "heading": "",
         "sub_heading": "",
         "space_between": "5"
-      }
-    },
-    "1655889371d26e100b": {
-      "type": "image-with-text",
-      "disabled": true,
-      "blocks": {
-        "916b16cc-7159-47bd-a6cf-111a04f521c4": {
-          "type": "text",
-          "settings": {
-            "text": "Próximamente <br>\nArma tu caja",
-            "text_style": "ff-special",
-            "text_color_desktop": "#ffffff",
-            "text_font_size_desktop": 33,
-            "margin_desktop": "0 0 10px",
-            "text_color_tablet": "#ffffff",
-            "text_font_size_tablet": 33,
-            "margin_tablet": "0 0 10px",
-            "text_color_mobile": "#ffffff",
-            "text_font_size_mobile": 27,
-            "margin_mobile": "0 0 10px"
-          }
-        },
-        "22beb9cd-6dd0-4e87-b278-3f2a3a7fa705": {
-          "type": "text",
-          "settings": {
-            "text": "<b>Saca a tu yo creativo<br>y arma tu propia<br>combinación<\/b>",
-            "text_style": "text",
-            "text_color_desktop": "#ffffff",
-            "text_font_size_desktop": 18,
-            "margin_desktop": "0 0 50px",
-            "text_color_tablet": "#ffffff",
-            "text_font_size_tablet": 18,
-            "margin_tablet": "0 0 45px",
-            "text_color_mobile": "#ffffff",
-            "text_font_size_mobile": 16,
-            "margin_mobile": "0 0 35px"
-          }
-        }
-      },
-      "block_order": [
-        "916b16cc-7159-47bd-a6cf-111a04f521c4",
-        "22beb9cd-6dd0-4e87-b278-3f2a3a7fa705"
-      ],
-      "settings": {
-        "full_with": false,
-        "color_bg": "rgba(0,0,0,0)",
-        "image_bg": "shopify:\/\/shop_images\/bartons-image-1.jpg",
-        "bg_align": "center",
-        "padding_block": "0px 20px",
-        "margin_block": "0 0 30px",
-        "space_between": "4",
-        "banner_size": 4,
-        "banner_size_ipad": 5,
-        "banner_size_mobile": 2,
-        "banner_position": "left",
-        "text_align": "end",
-        "banner_mobile": "always",
-        "banner_url": "",
-        "padding_content": "95px 0",
-        "content_color_bg": "rgba(0,0,0,0)"
-      }
-    },
-    "1655868725da4c1425": {
-      "type": "image-with-text",
-      "disabled": true,
-      "blocks": {
-        "1d8f0827-6c8a-4e08-94c6-38b8b4339275": {
-          "type": "text",
-          "settings": {
-            "text": "Catálogo de cajas",
-            "text_style": "h3",
-            "text_color_desktop": "#ffffff",
-            "text_font_size_desktop": 32,
-            "margin_desktop": "0 0 10px",
-            "text_color_tablet": "#ffffff",
-            "text_font_size_tablet": 32,
-            "margin_tablet": "0 0 10px",
-            "text_color_mobile": "#ffffff",
-            "text_font_size_mobile": 32,
-            "margin_mobile": "0 0 10px"
-          }
-        },
-        "4a8478f9-725e-4d0f-9933-8730adab92cc": {
-          "type": "text",
-          "settings": {
-            "text": "<b>Escoge de nuestra<br>selección de cajas<br>favoritas<\/b>",
-            "text_style": "text",
-            "text_color_desktop": "#ffffff",
-            "text_font_size_desktop": 18,
-            "margin_desktop": "",
-            "text_color_tablet": "#ffffff",
-            "text_font_size_tablet": 18,
-            "margin_tablet": "",
-            "text_color_mobile": "#ffffff",
-            "text_font_size_mobile": 16,
-            "margin_mobile": ""
-          }
-        },
-        "1655868725904e13a3-1": {
-          "type": "button",
-          "settings": {
-            "button_style": "style1",
-            "button": "Cotiza en Línea",
-            "link": "shopify:\/\/collections\/all",
-            "button_font_size": 16,
-            "button_padding": "0",
-            "margin": "30px 0 0",
-            "button_color": "#ffffff",
-            "button_color_border": "#4ec1ba",
-            "button_color_bg": "rgba(0,0,0,0)",
-            "button_color_hover": "#161311",
-            "button_color_border_hover": "#161311",
-            "button_color_bg_hover": "#161311",
-            "button_font_size_mobile": 16,
-            "button_padding_mobile": "0"
-          }
-        }
-      },
-      "block_order": [
-        "1d8f0827-6c8a-4e08-94c6-38b8b4339275",
-        "4a8478f9-725e-4d0f-9933-8730adab92cc",
-        "1655868725904e13a3-1"
-      ],
-      "settings": {
-        "full_with": false,
-        "color_bg": "rgba(0,0,0,0)",
-        "image_bg": "shopify:\/\/shop_images\/bartons-card-2.jpg",
-        "bg_align": "center",
-        "padding_block": "0px 20px",
-        "margin_block": "0 0 40px",
-        "space_between": "5",
-        "banner_size": 6,
-        "banner_size_ipad": 6,
-        "banner_size_mobile": 12,
-        "banner_position": "left",
-        "text_align": "start",
-        "banner_mobile": "hidden",
-        "banner_url": "",
-        "padding_content": "30px",
-        "content_color_bg": "rgba(0,0,0,0)"
       }
     },
     "1643043758ec2c692d": {
@@ -793,8 +654,6 @@
   "order": [
     "162566980471ae6442",
     "164307378492842e70",
-    "1655889371d26e100b",
-    "1655868725da4c1425",
     "1643043758ec2c692d",
     "1655541131b1244a66",
     "1655548050cef186cd",

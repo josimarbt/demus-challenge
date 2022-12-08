@@ -116,6 +116,66 @@
         "space_between": "5"
       }
     },
+    "16555516350f5bbdad": {
+      "type": "services",
+      "blocks": {
+        "16555516353d951a1f-0": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/icon-smile-4.png",
+            "box_title": "",
+            "box_desc": "¿Quieres pensar<br>fuera de la caja?<br>Desarrollamos tu<br>proyecto a la<br>medida"
+          }
+        },
+        "16555516353d951a1f-1": {
+          "type": "item",
+          "settings": {
+            "box_title": "15 days returns",
+            "box_desc": "moneyback guarantee"
+          }
+        },
+        "16555516353d951a1f-2": {
+          "type": "item",
+          "settings": {
+            "box_title": "Secure checkout",
+            "box_desc": "100% protected by Paypal"
+          }
+        },
+        "16555516353d951a1f-3": {
+          "type": "item",
+          "settings": {
+            "box_title": "100% free warranty",
+            "box_desc": "100% protected by Paypal"
+          }
+        }
+      },
+      "block_order": [
+        "16555516353d951a1f-0",
+        "16555516353d951a1f-1",
+        "16555516353d951a1f-2",
+        "16555516353d951a1f-3"
+      ],
+      "settings": {
+        "full_with": false,
+        "color_bg": "rgba(0,0,0,0)",
+        "padding_block": "0 0 50px",
+        "margin_block": "0 0 70px",
+        "heading": "",
+        "sub_heading": "",
+        "iconsize": "50x40",
+        "image_ratio": "portrait",
+        "crop": false,
+        "slide_enable": true,
+        "navigation": false,
+        "infinite": false,
+        "autoplay": false,
+        "autoplay_speed": "10000",
+        "column1": 4,
+        "column2": 4,
+        "column3": 2,
+        "column4": 2
+      }
+    },
     "1643043758ec2c692d": {
       "type": "product-list",
       "settings": {
@@ -239,66 +299,6 @@
         "column1": 2,
         "column2": 2,
         "column3": 1,
-        "column4": 2
-      }
-    },
-    "16555516350f5bbdad": {
-      "type": "services",
-      "disabled": true,
-      "blocks": {
-        "16555516353d951a1f-0": {
-          "type": "item",
-          "settings": {
-            "box_title": "Free shipping",
-            "box_desc": "on all orders over $49.00"
-          }
-        },
-        "16555516353d951a1f-1": {
-          "type": "item",
-          "settings": {
-            "box_title": "15 days returns",
-            "box_desc": "moneyback guarantee"
-          }
-        },
-        "16555516353d951a1f-2": {
-          "type": "item",
-          "settings": {
-            "box_title": "Secure checkout",
-            "box_desc": "100% protected by Paypal"
-          }
-        },
-        "16555516353d951a1f-3": {
-          "type": "item",
-          "settings": {
-            "box_title": "100% free warranty",
-            "box_desc": "100% protected by Paypal"
-          }
-        }
-      },
-      "block_order": [
-        "16555516353d951a1f-0",
-        "16555516353d951a1f-1",
-        "16555516353d951a1f-2",
-        "16555516353d951a1f-3"
-      ],
-      "settings": {
-        "full_with": false,
-        "color_bg": "rgba(0,0,0,0)",
-        "padding_block": "0 0 50px",
-        "margin_block": "0 0 70px",
-        "heading": "",
-        "sub_heading": "",
-        "iconsize": "50x40",
-        "image_ratio": "portrait",
-        "crop": false,
-        "slide_enable": true,
-        "navigation": false,
-        "infinite": false,
-        "autoplay": false,
-        "autoplay_speed": "10000",
-        "column1": 4,
-        "column2": 4,
-        "column3": 2,
         "column4": 2
       }
     },
@@ -653,10 +653,10 @@
   "order": [
     "162566980471ae6442",
     "164307378492842e70",
+    "16555516350f5bbdad",
     "1643043758ec2c692d",
     "1655541131b1244a66",
     "1655548050cef186cd",
-    "16555516350f5bbdad",
     "16555532074993fed3",
     "164256418835253c35",
     "1643106707f8a692c1",

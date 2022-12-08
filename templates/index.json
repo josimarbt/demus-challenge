@@ -504,9 +504,9 @@
         "915b0d46-bcd5-4bce-8cbf-fc3671d34075"
       ],
       "settings": {
-        "full_with": false,
+        "full_with": true,
         "color_bg": "rgba(0,0,0,0)",
-        "padding_block": "",
+        "padding_block": "10px 0px",
         "margin_block": "",
         "heading": "Nuestros clientes lindos y queridos...",
         "sub_heading": "",

@@ -1635,7 +1635,7 @@ h5, .h5 {
   transition: all .3s ease; }
   .product-grid .product-card__buttons .btn--add-to-cart {
     border: 0;
-    background: var(--btn-default-bg-color); }
+    background: #000 }
     .product-grid .product-card__buttons .btn--add-to-cart:before {
       content: "";
       position: absolute;
@@ -1644,7 +1644,7 @@ h5, .h5 {
       width: 0;
       height: 100%;
       display: block;
-      background: var(--btn-default-hover-bg-color);
+      background: var(--primary);
       transition: width .35s ease; }
     .product-grid .product-card__buttons .btn--add-to-cart > span {
       position: relative; }

@@ -121,7 +121,7 @@
       "settings": {
         "full_with": false,
         "color_bg": "rgba(0,0,0,0)",
-        "padding_block": "0 0 50px",
+        "padding_block": "0 0 30px",
         "margin_block": "0 0 30px",
         "heading": "Nuestros productos favoritos",
         "sub_heading": "",

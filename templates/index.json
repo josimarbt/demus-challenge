@@ -355,42 +355,131 @@
     },
     "1643106707f8a692c1": {
       "type": "gallery-image",
-      "disabled": true,
       "blocks": {
         "8ab415b5-4c59-4f21-a06d-242684882fa3": {
           "type": "item",
           "settings": {
-            "link": "https:\/\/instagram.com"
+            "image": "shopify:\/\/shop_images\/uber-img.png",
+            "link": ""
           }
         },
         "aedb8003-1d9d-47cf-8871-1d63419185c5": {
           "type": "item",
           "settings": {
-            "link": "https:\/\/instagram.com"
+            "image": "shopify:\/\/shop_images\/tw.png",
+            "link": "https:\/\/twitter.com"
           }
         },
         "7025c9d8-89d4-4328-9152-362646176e05": {
           "type": "item",
           "settings": {
-            "link": "https:\/\/instagram.com"
+            "image": "shopify:\/\/shop_images\/hsbc.png",
+            "link": ""
           }
         },
         "40023165-2027-474f-948d-0bd694324587": {
           "type": "item",
           "settings": {
-            "link": "https:\/\/instagram.com"
+            "image": "shopify:\/\/shop_images\/seguros-monterrey.png",
+            "link": ""
           }
         },
         "c5728cc2-f789-4d43-bcc9-9ccac7463ba0": {
           "type": "item",
           "settings": {
-            "link": "https:\/\/instagram.com"
+            "image": "shopify:\/\/shop_images\/kelloggs.png",
+            "link": ""
           }
         },
         "8e5884f4-220c-4b21-a5ba-23b6c5a056de": {
           "type": "item",
           "settings": {
-            "link": "https:\/\/instagram.com"
+            "image": "shopify:\/\/shop_images\/comer.png",
+            "link": ""
+          }
+        },
+        "bf464de4-f223-4f46-b01f-9f9403d062eb": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/f1.png",
+            "link": ""
+          }
+        },
+        "71ac0b31-d523-4574-be1c-f7f76ea29d83": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/tag-huer.png",
+            "link": ""
+          }
+        },
+        "3448a236-fa29-4ba6-badb-ebe866354739": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pepsico.png",
+            "link": ""
+          }
+        },
+        "d415b09d-d40d-44f6-8216-5f46c0c193df": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sharpie.png",
+            "link": "https:\/\/www.sharpie.com\/"
+          }
+        },
+        "f51946b1-f819-4d90-9e93-0e3e811b499a": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/creel.png",
+            "link": "https:\/\/www.creelabogados.com\/"
+          }
+        },
+        "3d95bec0-e895-4450-b6be-a24177066e53": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/herbalife.png",
+            "link": ""
+          }
+        },
+        "996d3be9-27ec-4c48-a249-7f8ce59aa9d0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ford.png",
+            "link": ""
+          }
+        },
+        "db83a25a-fce7-4042-a39e-c4046db220de": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hilton.png",
+            "link": "https:\/\/www.hiltonhotels.com\/es_XM\/home-new\/?cultureKey=es_XM&WT_mc_id=zLADA0WW1XX2PSH3DA4PPC5PPC6MULTIBR7"
+          }
+        },
+        "4afa772e-1e86-429c-9196-0f6525f2ead4": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bcb.png",
+            "link": "https:\/\/www.bcbgeneration.mx\/sistema\/buscavazia?ft=Generation"
+          }
+        },
+        "fcd42e77-a5ea-4131-b3f1-ca95d060fdfa": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/nobu.png",
+            "link": "https:\/\/www.nobuhotels.com\/es\/"
+          }
+        },
+        "a0e73d5b-c82d-4c40-8d57-eed73aea5a2e": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mvs.png",
+            "link": "https:\/\/mvstv.com\/"
+          }
+        },
+        "915b0d46-bcd5-4bce-8cbf-fc3671d34075": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/baker-mack.png",
+            "link": ""
           }
         }
       },
@@ -400,23 +489,35 @@
         "7025c9d8-89d4-4328-9152-362646176e05",
         "40023165-2027-474f-948d-0bd694324587",
         "c5728cc2-f789-4d43-bcc9-9ccac7463ba0",
-        "8e5884f4-220c-4b21-a5ba-23b6c5a056de"
+        "8e5884f4-220c-4b21-a5ba-23b6c5a056de",
+        "bf464de4-f223-4f46-b01f-9f9403d062eb",
+        "71ac0b31-d523-4574-be1c-f7f76ea29d83",
+        "3448a236-fa29-4ba6-badb-ebe866354739",
+        "d415b09d-d40d-44f6-8216-5f46c0c193df",
+        "f51946b1-f819-4d90-9e93-0e3e811b499a",
+        "3d95bec0-e895-4450-b6be-a24177066e53",
+        "996d3be9-27ec-4c48-a249-7f8ce59aa9d0",
+        "db83a25a-fce7-4042-a39e-c4046db220de",
+        "4afa772e-1e86-429c-9196-0f6525f2ead4",
+        "fcd42e77-a5ea-4131-b3f1-ca95d060fdfa",
+        "a0e73d5b-c82d-4c40-8d57-eed73aea5a2e",
+        "915b0d46-bcd5-4bce-8cbf-fc3671d34075"
       ],
       "settings": {
         "full_with": true,
         "color_bg": "rgba(0,0,0,0)",
         "padding_block": "",
         "margin_block": "",
-        "heading": "Share with #demus",
-        "sub_heading": "Follow @demus for inspiration.",
+        "heading": "Nuestros clientes lindos y queridos...",
+        "sub_heading": "",
         "image_ratio": "adapt",
         "crop": false,
         "popup": false,
-        "slide_enable": false,
+        "slide_enable": true,
         "space_between": "0",
         "navigation": true,
         "infinite": true,
-        "autoplay": false,
+        "autoplay": true,
         "autoplay_speed": "10000",
         "column1": 6,
         "column2": 3,

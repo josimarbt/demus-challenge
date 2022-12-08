@@ -118,14 +118,13 @@
     },
     "1643043758ec2c692d": {
       "type": "product-list",
-      "disabled": true,
       "settings": {
         "full_with": false,
         "color_bg": "rgba(0,0,0,0)",
         "padding_block": "0 0 50px",
         "margin_block": "0 0 70px",
-        "heading": "Trending Products",
-        "sub_heading": "Top view in this week",
+        "heading": "Nuestros productos favoritos",
+        "sub_heading": "",
         "collection_handle": "frontpage",
         "limit": 4,
         "product_style": "grid",

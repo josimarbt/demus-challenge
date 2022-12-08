@@ -129,7 +129,7 @@
         "limit": 4,
         "product_style": "grid",
         "button_text": "See All Products",
-        "slide_enable": false,
+        "slide_enable": true,
         "navigation": true,
         "infinite": true,
         "autoplay": false,

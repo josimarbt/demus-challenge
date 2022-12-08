@@ -138,8 +138,9 @@
         "16555516353d951a1f-3": {
           "type": "item",
           "settings": {
-            "box_title": "100% free warranty",
-            "box_desc": "100% protected by Paypal"
+            "icon": "shopify:\/\/shop_images\/icono-envia_180x_74895ab0-769d-480f-a5a8-60e5cbcf2269.png",
+            "box_title": "",
+            "box_desc": "Envía a una o<br>muchas<br>direcciones,<br>nosotros nos<br>encargamos de<br>toda la logística"
           }
         },
         "16555516353d951a1f-0": {

@@ -119,7 +119,7 @@
     "1643043758ec2c692d": {
       "type": "product-list",
       "settings": {
-        "full_with": false,
+        "full_with": true,
         "color_bg": "rgba(0,0,0,0)",
         "padding_block": "0 0px",
         "margin_block": "0 0 30px",

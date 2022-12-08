@@ -124,7 +124,7 @@
           "settings": {
             "icon": "shopify:\/\/shop_images\/section-service-img-1.png",
             "box_title": "",
-            "box_desc": "Personaliza con<br>nombre y\/o<br>logotipo"
+            "box_desc": "Personaliza con nombre y\/o logotipo"
           }
         },
         "16555516353d951a1f-2": {
@@ -159,7 +159,7 @@
         "16555516353d951a1f-0"
       ],
       "settings": {
-        "full_with": false,
+        "full_with": true,
         "color_bg": "rgba(0,0,0,0)",
         "padding_block": "0 0 50px",
         "margin_block": "0 0 30px",
@@ -168,7 +168,7 @@
         "iconsize": "50x50",
         "image_ratio": "adapt",
         "crop": false,
-        "slide_enable": false,
+        "slide_enable": true,
         "navigation": false,
         "infinite": false,
         "autoplay": false,

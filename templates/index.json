@@ -514,7 +514,7 @@
         "crop": false,
         "popup": false,
         "slide_enable": true,
-        "space_between": "0",
+        "space_between": "2",
         "navigation": true,
         "infinite": true,
         "autoplay": true,

@@ -3,7 +3,7 @@
     <div class="container{%if section.settings.fullwidth %}-fluid{% endif %}">
 
       <div class="header__inner" {% if section.settings.padding_block != blank %} style="padding: {{ section.settings.padding_block }};"{% endif %}>
-        <div class="row g-2 py-md-3 align-items-center justify-content-between">
+        <div class="row g-2 py-md-3 py-lg-4 px-lg-5 align-items-center justify-content-between">
           <div class="header-menu-mobile d-block d-lg-none col-auto">
             <div class="d-flex d-lg-none align-items-center">
               {%- if section.settings.menu != blank -%}
@@ -25,7 +25,7 @@
                 {%- if section.settings.logo_svg != blank -%}
                   <img class="img-fluid" src="{{ section.settings.logo_svg }}" alt="{{ shop.name }}"/>
                 {%- elsif section.settings.logo -%}
-                  <img class="header__heading-logo img-fluid" {% unless section.settings.logo.width < size_rentina %}srcset="{{ section.settings.logo | img_url: logo_size }} 1x, {{ section.settings.logo | img_url: 'master' }} 2x" {% endunless %}
+                  <img class="header__heading-logo img-fluid" {% unless section.settings.logo.width < size_rentina %}srcset="{{ section.settings.logo | img_url: logo_size }} 1x, {{ section.settings.logo | img_url: 'medium' }} 2x" {% endunless %}
                     src="{{ section.settings.logo | img_url: logo_size }}" loading="lazy" alt="{{ section.settings.logo.alt | default: shop.name | escape }}">
                 {%- else -%}
                   <span class="h2">{{ shop.name }}</span>

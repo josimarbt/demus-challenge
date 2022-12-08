@@ -14,84 +14,82 @@
   {%- endcapture -%}
 {%- endif -%}
 <section class="vela-section overflow-hidden vela-section--slideshow" style="{{ bgColor}} {{ paddingblock }} {{ marginblock }}">
-  <div class="container{% if section.settings.full_with %}-full{% endif %}">
-    <div class="vela-slideshow__inner">
-      <div class="js-vela-slideshow vela-slideshow" data-autoplay="{{ section.settings.autoplay }}" data-autoplayinterval="{{ section.settings.autoplay_speed }}" data-navigation="{{ section.settings.navigation }}" data-pagination="{{ section.settings.pagination }}" data-fade="{{ section.settings.fade }}">
-        {%- if section.blocks.size > 0 -%}
-          {%- for block in section.blocks -%}
-            <div class="vela-slideshow__item">
-              {%- if block.settings.link != blank -%}
-                <a href="{{ block.settings.link }}" class="vela-slideshow__item-link">
-                {%- endif -%}
-                {%- if block.settings.image == blank -%}
-                  <div class="placeholder-background">
-                    {%- capture current -%}
-                      {% cycle 1, 2 %}{%- endcapture -%}
-                    {{ 'lifestyle-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
-                  </div>
-                {%- else -%}
-                  <div class="slide--image">
-                    {%- if block.settings.image != blank -%}
-                      <div class="{% if block.settings.image_mobile != blank %}d-none d-md-block{% else %}d-block{% endif %}">
-                        {% include 'img-global', image: block.settings.image %}
-                      </div>
-                      {%- if block.settings.image_mobile != blank -%}
-                        <div class="d-block d-md-none">
-                          {% include 'img-global', image: block.settings.image_mobile %}
-                        </div>
-                      {%- endif -%}
-                    {%- else -%}
-                      <div class="placeholder-background">
-                        {%- capture current -%}
-                          {% cycle 1, 2, 3 %}{%- endcapture -%}
-                        {{ 'lifestyle-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+  <div class="vela-slideshow__inner">
+    <div class="js-vela-slideshow vela-slideshow" data-autoplay="{{ section.settings.autoplay }}" data-autoplayinterval="{{ section.settings.autoplay_speed }}" data-navigation="{{ section.settings.navigation }}" data-pagination="{{ section.settings.pagination }}" data-fade="{{ section.settings.fade }}">
+      {%- if section.blocks.size > 0 -%}
+        {%- for block in section.blocks -%}
+          <div class="vela-slideshow__item">
+            {%- if block.settings.link != blank -%}
+              <a href="{{ block.settings.link }}" class="vela-slideshow__item-link">
+              {%- endif -%}
+              {%- if block.settings.image == blank -%}
+                <div class="placeholder-background">
+                  {%- capture current -%}
+                    {% cycle 1, 2 %}{%- endcapture -%}
+                  {{ 'lifestyle-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+                </div>
+              {%- else -%}
+                <div class="slide--image">
+                  {%- if block.settings.image != blank -%}
+                    <div class="{% if block.settings.image_mobile != blank %}d-none d-md-block{% else %}d-block{% endif %}">
+                      {% include 'img-global', image: block.settings.image %}
+                    </div>
+                    {%- if block.settings.image_mobile != blank -%}
+                      <div class="d-block d-md-none">
+                        {% include 'img-global', image: block.settings.image_mobile %}
                       </div>
                     {%- endif -%}
-                  </div>
-                {%- endif -%}
-                {%- if block.settings.link != blank -%}
-                </a>
-              {%- endif -%}
-              <div class="slideshow-caption {% if block.settings.subheading == blank and block.settings.title == blank and block.settings.title2 == blank and block.settings.desc == blank and block.settings.btn_text == blank %} noCaption{% endif %}" style="background-color: {{ block.settings.content_color }}">
-                <div class="container-fluid captionWrap">
-                  <div class="slideshow-caption__inner {{ block.settings.alignment }} {% unless section.settings.full_with %}px-sm-2 px-md-3 px-lg-4 px-xl-5{% endunless %}">
-                    <div class="slideshow-caption__content text-{{ block.settings.text-alignment }} ">
-                      {%- unless block.settings.subheading == blank -%}
-                        <div class="slideshow-caption__subheading mb-2 {{ block.settings.subheading_font_family}} {{ block.settings.slides_effect }}-1" style="color:{{ block.settings.subheading_color }}; font-size: {{ block.settings.subheading_font_size}}px;">
-                          {{ block.settings.subheading }}
-                        </div>
-                      {%- endunless -%}
-                      {%- unless block.settings.title == blank -%}
-                        <div class="slideshow-caption__heading {{ block.settings.title_font_family}} {{ block.settings.slides_effect }}-2" style="color:{{ block.settings.title_color }}; font-size: {{ block.settings.title_font_size}}px;">
-                          {{ block.settings.title }}
-                        </div>
-                      {%- endunless -%}
-                      {%- unless block.settings.title2 == blank -%}
-                        <div class="slideshow-caption__heading--small {{ block.settings.title2_font_family}} {{ block.settings.slides_effect }}-3" style="color:#faf1f1;font-size: {{ block.settings.title2_font_size}}px;">
-                          {{ block.settings.title2 }}
-                        </div>
-                      {%- endunless -%}
-                      {%- unless block.settings.desc == blank -%}
-                        <div class="slideshow-caption__desc mb-0 {{ block.settings.desc_font_family}} {{ block.settings.slides_effect }}-4" style="color:{{ block.settings.desc_color }};font-size: {{ block.settings.desc_font_size}}px;">
-                          {{ block.settings.desc }}
-                        </div>
-                      {%- endunless -%}
-                      {%- unless block.settings.btn_text == blank -%}
-                        <div>
-                          <a class="slideshow-caption__btn {{ block.settings.slides_effect }}-5" href="{{ block.settings.btn_link }}" style="color: {{ block.settings.btn_text_color }};font-size: {{ block.settings.btn_font_size}}px;{% if block.settings.btn_padding != blank %}padding: {{ block.settings.btn_padding }}; {% endif %}">
-                            <span class="slide-btn--wrap position-absolute" style="border-color: {{ block.settings.btn_border_color }}; background-color: {{ block.settings.btn_bg_color }};"></span>
-                            <span>{{ block.settings.btn_text }}</span>
-                          </a>
-                        </div>
-                      {%- endunless -%}
+                  {%- else -%}
+                    <div class="placeholder-background">
+                      {%- capture current -%}
+                        {% cycle 1, 2, 3 %}{%- endcapture -%}
+                      {{ 'lifestyle-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
                     </div>
+                  {%- endif -%}
+                </div>
+              {%- endif -%}
+              {%- if block.settings.link != blank -%}
+              </a>
+            {%- endif -%}
+            <div class="slideshow-caption {% if block.settings.subheading == blank and block.settings.title == blank and block.settings.title2 == blank and block.settings.desc == blank and block.settings.btn_text == blank %} noCaption{% endif %}" style="background-color: {{ block.settings.content_color }}">
+              <div class="container-fluid captionWrap">
+                <div class="slideshow-caption__inner {{ block.settings.alignment }} {% unless section.settings.full_with %}px-sm-2 px-md-3 px-lg-4 px-xl-5{% endunless %}">
+                  <div class="slideshow-caption__content text-{{ block.settings.text-alignment }} ">
+                    {%- unless block.settings.subheading == blank -%}
+                      <div class="slideshow-caption__subheading mb-2 {{ block.settings.subheading_font_family}} {{ block.settings.slides_effect }}-1" style="color:{{ block.settings.subheading_color }}; font-size: {{ block.settings.subheading_font_size}}px;">
+                        {{ block.settings.subheading }}
+                      </div>
+                    {%- endunless -%}
+                    {%- unless block.settings.title == blank -%}
+                      <div class="slideshow-caption__heading {{ block.settings.title_font_family}} {{ block.settings.slides_effect }}-2" style="color:{{ block.settings.title_color }}; font-size: {{ block.settings.title_font_size}}px;">
+                        {{ block.settings.title }}
+                      </div>
+                    {%- endunless -%}
+                    {%- unless block.settings.title2 == blank -%}
+                      <div class="slideshow-caption__heading--small {{ block.settings.title2_font_family}} {{ block.settings.slides_effect }}-3" style="color:#faf1f1;font-size: {{ block.settings.title2_font_size}}px;">
+                        {{ block.settings.title2 }}
+                      </div>
+                    {%- endunless -%}
+                    {%- unless block.settings.desc == blank -%}
+                      <div class="slideshow-caption__desc mb-0 {{ block.settings.desc_font_family}} {{ block.settings.slides_effect }}-4" style="color:{{ block.settings.desc_color }};font-size: {{ block.settings.desc_font_size}}px;">
+                        {{ block.settings.desc }}
+                      </div>
+                    {%- endunless -%}
+                    {%- unless block.settings.btn_text == blank -%}
+                      <div>
+                        <a class="slideshow-caption__btn {{ block.settings.slides_effect }}-5" href="{{ block.settings.btn_link }}" style="color: {{ block.settings.btn_text_color }};font-size: {{ block.settings.btn_font_size}}px;{% if block.settings.btn_padding != blank %}padding: {{ block.settings.btn_padding }}; {% endif %}">
+                          <span class="slide-btn--wrap position-absolute" style="border-color: {{ block.settings.btn_border_color }}; background-color: {{ block.settings.btn_bg_color }};"></span>
+                          <span>{{ block.settings.btn_text }}</span>
+                        </a>
+                      </div>
+                    {%- endunless -%}
                   </div>
                 </div>
               </div>
             </div>
-          {%- endfor -%}
-        {%- endif -%}
-      </div>
+          </div>
+        {%- endfor -%}
+      {%- endif -%}
     </div>
   </div>
 </section>

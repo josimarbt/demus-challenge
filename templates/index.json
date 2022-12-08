@@ -84,7 +84,7 @@
           "settings": {
             "width": "col-12 col-lg-6 mb-5",
             "banner": "shopify:\/\/shop_images\/bartons-card-2.jpg",
-            "button_url": "",
+            "button_url": "shopify:\/\/collections\/all",
             "subtitle": "",
             "heading_subcolor": "#54504f",
             "heading_sub_size": 16,

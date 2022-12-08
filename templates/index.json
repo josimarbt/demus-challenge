@@ -130,8 +130,9 @@
         "16555516353d951a1f-2": {
           "type": "item",
           "settings": {
-            "box_title": "Secure checkout",
-            "box_desc": "100% protected by Paypal"
+            "icon": "shopify:\/\/shop_images\/icon-heart-2.png",
+            "box_title": "",
+            "box_desc": "Empresa 100%<br>mexicana, creada<br>y dirigida por<br>mujeres."
           }
         },
         "16555516353d951a1f-3": {

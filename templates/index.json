@@ -119,19 +119,12 @@
     "16555516350f5bbdad": {
       "type": "services",
       "blocks": {
-        "16555516353d951a1f-0": {
-          "type": "item",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/icon-smile-4.png",
-            "box_title": "",
-            "box_desc": "¿Quieres pensar<br>fuera de la caja?<br>Desarrollamos tu<br>proyecto a la<br>medida"
-          }
-        },
         "16555516353d951a1f-1": {
           "type": "item",
           "settings": {
-            "box_title": "15 days returns",
-            "box_desc": "moneyback guarantee"
+            "icon": "shopify:\/\/shop_images\/section-service-img-1.png",
+            "box_title": "",
+            "box_desc": "Personaliza con<br>nombre y\/o<br>logotipo"
           }
         },
         "16555516353d951a1f-2": {
@@ -147,13 +140,21 @@
             "box_title": "100% free warranty",
             "box_desc": "100% protected by Paypal"
           }
+        },
+        "16555516353d951a1f-0": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/icon-smile-4.png",
+            "box_title": "",
+            "box_desc": "¿Quieres pensar<br>fuera de la caja?<br>Desarrollamos tu<br>proyecto a la<br>medida"
+          }
         }
       },
       "block_order": [
-        "16555516353d951a1f-0",
         "16555516353d951a1f-1",
         "16555516353d951a1f-2",
-        "16555516353d951a1f-3"
+        "16555516353d951a1f-3",
+        "16555516353d951a1f-0"
       ],
       "settings": {
         "full_with": false,

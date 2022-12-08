@@ -504,7 +504,7 @@
         "915b0d46-bcd5-4bce-8cbf-fc3671d34075"
       ],
       "settings": {
-        "full_with": true,
+        "full_with": false,
         "color_bg": "rgba(0,0,0,0)",
         "padding_block": "0px 20px",
         "margin_block": "0px 0px",

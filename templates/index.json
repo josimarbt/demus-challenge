@@ -506,8 +506,8 @@
       "settings": {
         "full_with": true,
         "color_bg": "rgba(0,0,0,0)",
-        "padding_block": "10px 0px",
-        "margin_block": "10px 0px",
+        "padding_block": "10px 10px",
+        "margin_block": "10px 10px",
         "heading": "Nuestros clientes lindos y queridos...",
         "sub_heading": "",
         "image_ratio": "adapt",

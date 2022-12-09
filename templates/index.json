@@ -854,7 +854,7 @@
         "margin_block": "0 0 30px",
         "image_ratio": "adapt",
         "crop": false,
-        "effect": "effectThree",
+        "effect": "effectOne",
         "space_between": "4",
         "custom_css": ""
       }

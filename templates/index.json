@@ -778,7 +778,7 @@
             "button": "¡Cuéntanos con qué te podemos ayudar!",
             "link": "",
             "button_font_size": 18,
-            "button_padding": "50px 0px",
+            "button_padding": "10px 0px",
             "margin": "10px 0px",
             "button_color": "#ffffff",
             "button_color_border": "#000000",

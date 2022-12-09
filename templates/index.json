@@ -512,7 +512,7 @@
         "sub_heading": "",
         "image_ratio": "adapt",
         "crop": false,
-        "popup": false,
+        "popup": true,
         "slide_enable": true,
         "space_between": "2",
         "navigation": true,

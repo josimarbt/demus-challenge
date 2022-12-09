@@ -407,6 +407,68 @@
         "column4": 2
       }
     },
+    "7e1d3d8e-8780-473e-a5da-1e388996384f": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--17162373988630__7e1d3d8e-8780-473e-a5da-1e388996384f-16705990312297147d-0": {
+          "type": "text",
+          "settings": {
+            "text": "<div>\n<strong>Te invitamos a comprar local, causar impacto\ny de paso hacer feliz a alguien con un regalo.<\/strong><br>Desde el diseño de la propuesta, hasta que la persona reciba su regalo con todo y una tarjeta cursi (o no), nosotros nos encargamos de todo el proceso para que te despreocupes. Déjanoslo a nosotros, lo haremos fácil y divertido.<\/div>",
+            "text_style": "text",
+            "text_color_desktop": "#000000",
+            "text_font_size_desktop": 16,
+            "margin_desktop": "",
+            "text_color_tablet": "#000000",
+            "text_font_size_tablet": 16,
+            "margin_tablet": "",
+            "text_color_mobile": "#000000",
+            "text_font_size_mobile": 16,
+            "margin_mobile": ""
+          }
+        },
+        "template--17162373988630__7e1d3d8e-8780-473e-a5da-1e388996384f-16705990312297147d-1": {
+          "type": "button",
+          "settings": {
+            "button_style": "style1",
+            "button": "¡Cuéntanos con qué te podemos ayudar!",
+            "link": "",
+            "button_font_size": 18,
+            "button_padding": "10px 0px",
+            "margin": "10px 0px",
+            "button_color": "#ffffff",
+            "button_color_border": "#000000",
+            "button_color_bg": "#000000",
+            "button_color_hover": "#ffffff",
+            "button_color_border_hover": "#000000",
+            "button_color_bg_hover": "#000000",
+            "button_font_size_mobile": 16,
+            "button_padding_mobile": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17162373988630__7e1d3d8e-8780-473e-a5da-1e388996384f-16705990312297147d-0",
+        "template--17162373988630__7e1d3d8e-8780-473e-a5da-1e388996384f-16705990312297147d-1"
+      ],
+      "settings": {
+        "full_with": true,
+        "color_bg": "rgba(0,0,0,0)",
+        "image_bg": "shopify:\/\/shop_images\/banner-contact.webp",
+        "bg_align": "center",
+        "padding_block": "0px 0px",
+        "margin_block": "0 0 30px",
+        "space_between": "0",
+        "banner_size": 9,
+        "banner_size_ipad": 6,
+        "banner_size_mobile": 12,
+        "banner_position": "left",
+        "text_align": "start",
+        "banner_mobile": "always",
+        "banner_url": "",
+        "padding_content": "",
+        "content_color_bg": "rgba(0,0,0,0)"
+      }
+    },
     "1655541131b1244a66": {
       "type": "collection-list",
       "disabled": true,
@@ -751,68 +813,6 @@
         "column3": 1,
         "column4": 1
       }
-    },
-    "7e1d3d8e-8780-473e-a5da-1e388996384f": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--17162373988630__7e1d3d8e-8780-473e-a5da-1e388996384f-16705990312297147d-0": {
-          "type": "text",
-          "settings": {
-            "text": "<div>\n<strong>Te invitamos a comprar local, causar impacto\ny de paso hacer feliz a alguien con un regalo.<\/strong><br>Desde el diseño de la propuesta, hasta que la persona reciba su regalo con todo y una tarjeta cursi (o no), nosotros nos encargamos de todo el proceso para que te despreocupes. Déjanoslo a nosotros, lo haremos fácil y divertido.<\/div>",
-            "text_style": "text",
-            "text_color_desktop": "#000000",
-            "text_font_size_desktop": 16,
-            "margin_desktop": "",
-            "text_color_tablet": "#000000",
-            "text_font_size_tablet": 16,
-            "margin_tablet": "",
-            "text_color_mobile": "#000000",
-            "text_font_size_mobile": 16,
-            "margin_mobile": ""
-          }
-        },
-        "template--17162373988630__7e1d3d8e-8780-473e-a5da-1e388996384f-16705990312297147d-1": {
-          "type": "button",
-          "settings": {
-            "button_style": "style1",
-            "button": "¡Cuéntanos con qué te podemos ayudar!",
-            "link": "",
-            "button_font_size": 18,
-            "button_padding": "10px 0px",
-            "margin": "10px 0px",
-            "button_color": "#ffffff",
-            "button_color_border": "#000000",
-            "button_color_bg": "#000000",
-            "button_color_hover": "#ffffff",
-            "button_color_border_hover": "#000000",
-            "button_color_bg_hover": "#000000",
-            "button_font_size_mobile": 16,
-            "button_padding_mobile": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--17162373988630__7e1d3d8e-8780-473e-a5da-1e388996384f-16705990312297147d-0",
-        "template--17162373988630__7e1d3d8e-8780-473e-a5da-1e388996384f-16705990312297147d-1"
-      ],
-      "settings": {
-        "full_with": true,
-        "color_bg": "rgba(0,0,0,0)",
-        "image_bg": "shopify:\/\/shop_images\/banner-contact.webp",
-        "bg_align": "center",
-        "padding_block": "0px 0px",
-        "margin_block": "0 0 30px",
-        "space_between": "0",
-        "banner_size": 9,
-        "banner_size_ipad": 6,
-        "banner_size_mobile": 12,
-        "banner_position": "left",
-        "text_align": "start",
-        "banner_mobile": "always",
-        "banner_url": "",
-        "padding_content": "",
-        "content_color_bg": "rgba(0,0,0,0)"
-      }
     }
   },
   "order": [
@@ -822,6 +822,7 @@
     "16555516350f5bbdad",
     "1643106707f8a692c1",
     "164256418835253c35",
+    "7e1d3d8e-8780-473e-a5da-1e388996384f",
     "1655541131b1244a66",
     "1655548050cef186cd",
     "16555532074993fed3",
@@ -833,7 +834,6 @@
     "16559031858e266e84",
     "1655903188076d1ed7",
     "165591511898c71969",
-    "164251888061f08632",
-    "7e1d3d8e-8780-473e-a5da-1e388996384f"
+    "164251888061f08632"
   ]
 }

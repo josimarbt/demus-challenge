@@ -398,7 +398,7 @@
         "blog_style": "grid",
         "navigation": true,
         "pagination": true,
-        "infinite": false,
+        "infinite": true,
         "autoplay": false,
         "autoplay_speed": "10000",
         "column1": 4,

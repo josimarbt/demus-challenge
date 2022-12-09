@@ -230,18 +230,9 @@
           },
           "efc937e0-642e-4e4c-ada0-1d76f486880d": {
             "type": "link_list",
-            "disabled": true,
             "settings": {
               "title": "Políticas",
               "menu": "pol-ticas"
-            }
-          },
-          "3585fc7c-9bcb-4be9-9788-0e3ccc9dc68c": {
-            "type": "link_list",
-            "disabled": true,
-            "settings": {
-              "title": "About",
-              "menu": ""
             }
           },
           "758f0291-59d6-499b-b9be-f7f625afdce6": {
@@ -251,6 +242,21 @@
               "footer_copyright": "Copyright © Velatheme. All Right Reserved.",
               "payment_enable": true
             }
+          },
+          "ce79f9c0-ba66-43d5-8032-fc74af07625f": {
+            "type": "image_list",
+            "settings": {
+              "title": "",
+              "image1": "shopify:\/\/shop_images\/dinkbit-hca-negro_200x100_1ebd84ea-6138-4104-b140-0c5d9f8694e6.png",
+              "url1": "https:\/\/dinkbit.com\/",
+              "url2": "",
+              "url3": "",
+              "url4": "",
+              "url5": "",
+              "url6": "",
+              "url7": "",
+              "url8": ""
+            }
           }
         },
         "block_order": [
@@ -258,8 +264,8 @@
           "eb95aebb-991a-46a6-8ccc-2a7c4ce80a1b",
           "70983933-17cd-45a0-bcc5-d614521caf18",
           "efc937e0-642e-4e4c-ada0-1d76f486880d",
-          "3585fc7c-9bcb-4be9-9788-0e3ccc9dc68c",
-          "758f0291-59d6-499b-b9be-f7f625afdce6"
+          "758f0291-59d6-499b-b9be-f7f625afdce6",
+          "ce79f9c0-ba66-43d5-8032-fc74af07625f"
         ],
         "settings": {
         }

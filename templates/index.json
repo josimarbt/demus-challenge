@@ -391,7 +391,7 @@
         "blog_date": false,
         "blog_author": false,
         "blog_comment": false,
-        "blog_excerp": true,
+        "blog_excerp": false,
         "blog_readmore": true,
         "image_ratio": "adapt",
         "crop": false,

@@ -203,156 +203,6 @@
         "column4": 2
       }
     },
-    "1655541131b1244a66": {
-      "type": "collection-list",
-      "disabled": true,
-      "blocks": {
-        "1655541131ecffbaca-0": {
-          "type": "collection",
-          "settings": {
-            "width": "col-12 col-md-8",
-            "collection_title": "Chairs",
-            "collection_handle": "decor"
-          }
-        },
-        "1655541131ecffbaca-1": {
-          "type": "collection",
-          "settings": {
-            "width": "col-12 col-md-4",
-            "collection_title": "Lighting",
-            "collection_handle": "lighting"
-          }
-        }
-      },
-      "block_order": [
-        "1655541131ecffbaca-0",
-        "1655541131ecffbaca-1"
-      ],
-      "settings": {
-        "full_with": false,
-        "color_bg": "rgba(0,0,0,0)",
-        "padding_block": "0 0 45px",
-        "margin_block": "0 0 70px",
-        "heading": "",
-        "sub_heading": "",
-        "image_ratio": "adapt",
-        "crop": false,
-        "collection_count": true
-      }
-    },
-    "1655548050cef186cd": {
-      "type": "product-tab-collection",
-      "disabled": true,
-      "blocks": {
-        "165554805079558247-0": {
-          "type": "tab",
-          "settings": {
-            "title": "All",
-            "collection": "frontpage"
-          }
-        },
-        "165554805079558247-1": {
-          "type": "tab",
-          "settings": {
-            "title": "Chairs",
-            "collection": "chairs"
-          }
-        },
-        "7ad46645-8ed5-41db-b29f-65e8e78bb68f": {
-          "type": "tab",
-          "settings": {
-            "title": "Decor",
-            "collection": "decor"
-          }
-        },
-        "4dae9322-31c9-4e0c-8d79-b23554fb705f": {
-          "type": "tab",
-          "settings": {
-            "title": "Lighting",
-            "collection": "lighting"
-          }
-        },
-        "165554805079558247-2": {
-          "type": "tab",
-          "settings": {
-            "title": "Sofas",
-            "collection": "sofas"
-          }
-        }
-      },
-      "block_order": [
-        "165554805079558247-0",
-        "165554805079558247-1",
-        "7ad46645-8ed5-41db-b29f-65e8e78bb68f",
-        "4dae9322-31c9-4e0c-8d79-b23554fb705f",
-        "165554805079558247-2"
-      ],
-      "settings": {
-        "full_with": false,
-        "color_bg": "rgba(0,0,0,0)",
-        "padding_block": "0 0 45px",
-        "margin_block": "0 0 70px",
-        "heading": "Most Popular Products",
-        "limit": 4,
-        "slide_enable": false,
-        "navigation": false,
-        "infinite": false,
-        "autoplay": false,
-        "autoplay_speed": "10000",
-        "column1": 2,
-        "column2": 2,
-        "column3": 1,
-        "column4": 2
-      }
-    },
-    "16555532074993fed3": {
-      "type": "newsletter",
-      "disabled": true,
-      "settings": {
-        "full_with": false,
-        "color_bg": "rgba(0,0,0,0)",
-        "padding_block": "80px 0",
-        "margin_block": "0 0 70px",
-        "heading": "Subscribe To Our Newsletter",
-        "sub_heading": "Sign up for the weekly newsletter and build better ecommerce stores.",
-        "description": "We respect your privacy, so we never share your info.",
-        "mailchimp": false,
-        "newsletter_form_action": ""
-      }
-    },
-    "164256418835253c35": {
-      "type": "blog-posts",
-      "disabled": true,
-      "settings": {
-        "full_with": false,
-        "color_bg": "rgba(0,0,0,0)",
-        "padding_block": "45px 0",
-        "margin_block": "0  0 70px",
-        "heading": "Our Blog",
-        "sub_heading": "News posuere augue, vitae condimentum sapien dignissim",
-        "blog_handle": "news",
-        "limit": 5,
-        "blog_image": true,
-        "blog_tags": true,
-        "blog_date": true,
-        "blog_author": false,
-        "blog_comment": false,
-        "blog_excerp": true,
-        "blog_readmore": true,
-        "image_ratio": "adapt",
-        "crop": false,
-        "blog_style": "grid",
-        "navigation": true,
-        "pagination": false,
-        "infinite": false,
-        "autoplay": false,
-        "autoplay_speed": "10000",
-        "column1": 3,
-        "column2": 2,
-        "column3": 1,
-        "column4": 1
-      }
-    },
     "1643106707f8a692c1": {
       "type": "gallery-image",
       "blocks": {
@@ -523,6 +373,155 @@
         "column2": 3,
         "column3": 3,
         "column4": 2
+      }
+    },
+    "164256418835253c35": {
+      "type": "blog-posts",
+      "settings": {
+        "full_with": false,
+        "color_bg": "rgba(0,0,0,0)",
+        "padding_block": "45px 0",
+        "margin_block": "0  0 70px",
+        "heading": "Our Blog",
+        "sub_heading": "News posuere augue, vitae condimentum sapien dignissim",
+        "blog_handle": "news",
+        "limit": 5,
+        "blog_image": true,
+        "blog_tags": true,
+        "blog_date": true,
+        "blog_author": false,
+        "blog_comment": false,
+        "blog_excerp": true,
+        "blog_readmore": true,
+        "image_ratio": "adapt",
+        "crop": false,
+        "blog_style": "grid",
+        "navigation": true,
+        "pagination": false,
+        "infinite": false,
+        "autoplay": false,
+        "autoplay_speed": "10000",
+        "column1": 3,
+        "column2": 2,
+        "column3": 1,
+        "column4": 1
+      }
+    },
+    "1655541131b1244a66": {
+      "type": "collection-list",
+      "disabled": true,
+      "blocks": {
+        "1655541131ecffbaca-0": {
+          "type": "collection",
+          "settings": {
+            "width": "col-12 col-md-8",
+            "collection_title": "Chairs",
+            "collection_handle": "decor"
+          }
+        },
+        "1655541131ecffbaca-1": {
+          "type": "collection",
+          "settings": {
+            "width": "col-12 col-md-4",
+            "collection_title": "Lighting",
+            "collection_handle": "lighting"
+          }
+        }
+      },
+      "block_order": [
+        "1655541131ecffbaca-0",
+        "1655541131ecffbaca-1"
+      ],
+      "settings": {
+        "full_with": false,
+        "color_bg": "rgba(0,0,0,0)",
+        "padding_block": "0 0 45px",
+        "margin_block": "0 0 70px",
+        "heading": "",
+        "sub_heading": "",
+        "image_ratio": "adapt",
+        "crop": false,
+        "collection_count": true
+      }
+    },
+    "1655548050cef186cd": {
+      "type": "product-tab-collection",
+      "disabled": true,
+      "blocks": {
+        "165554805079558247-0": {
+          "type": "tab",
+          "settings": {
+            "title": "All",
+            "collection": "frontpage"
+          }
+        },
+        "165554805079558247-1": {
+          "type": "tab",
+          "settings": {
+            "title": "Chairs",
+            "collection": "chairs"
+          }
+        },
+        "7ad46645-8ed5-41db-b29f-65e8e78bb68f": {
+          "type": "tab",
+          "settings": {
+            "title": "Decor",
+            "collection": "decor"
+          }
+        },
+        "4dae9322-31c9-4e0c-8d79-b23554fb705f": {
+          "type": "tab",
+          "settings": {
+            "title": "Lighting",
+            "collection": "lighting"
+          }
+        },
+        "165554805079558247-2": {
+          "type": "tab",
+          "settings": {
+            "title": "Sofas",
+            "collection": "sofas"
+          }
+        }
+      },
+      "block_order": [
+        "165554805079558247-0",
+        "165554805079558247-1",
+        "7ad46645-8ed5-41db-b29f-65e8e78bb68f",
+        "4dae9322-31c9-4e0c-8d79-b23554fb705f",
+        "165554805079558247-2"
+      ],
+      "settings": {
+        "full_with": false,
+        "color_bg": "rgba(0,0,0,0)",
+        "padding_block": "0 0 45px",
+        "margin_block": "0 0 70px",
+        "heading": "Most Popular Products",
+        "limit": 4,
+        "slide_enable": false,
+        "navigation": false,
+        "infinite": false,
+        "autoplay": false,
+        "autoplay_speed": "10000",
+        "column1": 2,
+        "column2": 2,
+        "column3": 1,
+        "column4": 2
+      }
+    },
+    "16555532074993fed3": {
+      "type": "newsletter",
+      "disabled": true,
+      "settings": {
+        "full_with": false,
+        "color_bg": "rgba(0,0,0,0)",
+        "padding_block": "80px 0",
+        "margin_block": "0 0 70px",
+        "heading": "Subscribe To Our Newsletter",
+        "sub_heading": "Sign up for the weekly newsletter and build better ecommerce stores.",
+        "description": "We respect your privacy, so we never share your info.",
+        "mailchimp": false,
+        "newsletter_form_action": ""
       }
     },
     "165588485358e5bd3f": {
@@ -759,11 +758,11 @@
     "164307378492842e70",
     "1643043758ec2c692d",
     "16555516350f5bbdad",
+    "1643106707f8a692c1",
+    "164256418835253c35",
     "1655541131b1244a66",
     "1655548050cef186cd",
     "16555532074993fed3",
-    "164256418835253c35",
-    "1643106707f8a692c1",
     "165588485358e5bd3f",
     "165588561760ff3366",
     "165590180764479285",

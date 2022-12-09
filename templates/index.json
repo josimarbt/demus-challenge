@@ -802,7 +802,7 @@
         "bg_align": "center",
         "padding_block": "0px 0px",
         "margin_block": "0 0 30px",
-        "space_between": "2",
+        "space_between": "0",
         "banner_size": 9,
         "banner_size_ipad": 6,
         "banner_size_mobile": 12,

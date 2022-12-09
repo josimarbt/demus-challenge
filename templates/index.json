@@ -848,7 +848,7 @@
         "d08246e2-e699-402c-abfa-855f44953997"
       ],
       "settings": {
-        "full_with": false,
+        "full_with": true,
         "color_bg": "rgba(0,0,0,0)",
         "padding_block": "",
         "margin_block": "0 0 30px",

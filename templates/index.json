@@ -381,7 +381,7 @@
         "full_with": true,
         "color_bg": "rgba(0,0,0,0)",
         "padding_block": "45px 20px",
-        "margin_block": "0  0 70px",
+        "margin_block": "0  0 10px",
         "heading": "Y así es como la magia sucede...",
         "sub_heading": "",
         "blog_handle": "news",

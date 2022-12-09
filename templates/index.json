@@ -394,7 +394,7 @@
         "blog_excerp": false,
         "blog_readmore": true,
         "image_ratio": "adapt",
-        "crop": true,
+        "crop": false,
         "blog_style": "grid",
         "navigation": true,
         "pagination": true,

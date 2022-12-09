@@ -2762,7 +2762,7 @@ h5, .h5 {
     position: relative;
     transition: opacity .3s ease;
     cursor: zoom-in; }
-    .gallery___item a .icon {
+    /* .gallery___item a .icon {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -2784,7 +2784,7 @@ h5, .h5 {
       background-color: rgba(0, 0, 0, 0.6);
       z-index: 1;
       visibility: hidden;
-      transition: opacity .3s ease-in-out; }
+      transition: opacity .3s ease-in-out; } */
     .gallery___item a .card__image {
       transition: all .3s ease-in-out;
       -webkit-transform: scale(1);

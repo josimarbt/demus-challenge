@@ -230,8 +230,8 @@
       "settings": {
         "full_with": true,
         "color_bg": "#fbf7f4",
-        "padding_block": "0 0 50px",
-        "margin_block": "0 0 50px",
+        "padding_block": "30px 0 50px",
+        "margin_block": "0 0 70px",
         "heading": "",
         "sub_heading": "",
         "iconsize": "50x50",

@@ -109,8 +109,8 @@
       "settings": {
         "full_with": false,
         "color_bg": "rgba(0,0,0,0)",
-        "padding_block": "0",
-        "margin_block": "0 0 40px",
+        "padding_block": "0 0 45px",
+        "margin_block": "0 0 30px",
         "heading": "",
         "sub_heading": "",
         "space_between": "5"

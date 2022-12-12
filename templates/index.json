@@ -496,7 +496,7 @@
         "template--17162373988630__7e1d3d8e-8780-473e-a5da-1e388996384f-16705990312297147d-1"
       ],
       "settings": {
-        "full_with": true,
+        "full_with": false,
         "color_bg": "#f4efef",
         "image_bg": "shopify:\/\/shop_images\/banner-contact.webp",
         "bg_align": "center",

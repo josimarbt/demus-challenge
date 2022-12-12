@@ -48,7 +48,6 @@
               </a>
             </div>
             {%- include "vela-toplinks" -%}
-            {%- include 'header-user' -%}
             {%- include 'header-cart' -%}
             {%- render 'header-search' -%}
           </div>
@@ -106,8 +105,13 @@
       }, {
         "type": "text",
         "id": "login_text",
-        "label": "Login Text",
+        "label": "Login Button Text",
         "default": "Iniciar Sesion"
+      }, {
+        "type": "text",
+        "id": "register_text",
+        "label": "Register Button Text",
+        "default": "Registro"
       }
     ],
     "blocks": [

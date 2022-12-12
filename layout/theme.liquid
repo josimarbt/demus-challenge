@@ -61,6 +61,11 @@
     {% section 'announcement-bar' %}
     {% section 'header' %}
     <main id="MainContent" class="main-content content-for-layout" tabindex="-1">
+      <div class="whatsapp-bubble">
+        <a id="whatsapp-bubble" href="https://wa.me/525510496746" target="_blank">
+          {%- render 'icons' with icon: 'whatsapp', class: 'icon icon-wsp', attr: 'width="24" height="28"' -%}
+        </a>
+      </div>
       <div class="main-content__inner">
         {{ content_for_layout }}
       </div>
@@ -76,8 +81,7 @@
         {%- if request.page_type == 'cart' -%}
           cart_add_url : '{{ routes.cart_add_url }}',
           cart_change_url : '{{ routes.cart_change_url }}',
-          cart_update_url : '{{ routes.cart_update_url }}',{%- endif -%}
-        predictive_search_url: '{{ routes.predictive_search_url }}'
+          cart_update_url : '{{ routes.cart_update_url }}',{%- endif -%}predictive_search_url: '{{ routes.predictive_search_url }}'
       };
     </script>
     {% include 'custom-fonts' %}

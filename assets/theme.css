@@ -122,6 +122,26 @@
   .velaTopLinks:hover .top-link__dropdown-menu {
     opacity: 1;
     visibility: visible; }
+  
+.whatsapp-bubble {
+  position: fixed;
+  background-color: #4dc247;
+  color: #FFF;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 6px rgb(0 0 0 / 40%);
+  z-index: 999;
+}
+
+#whatsapp-bubble {
+  width: 50px;
+  height: 50px;
+  font-size: 28px;
+  bottom: 35px;
+  right: 35px;
+}
 
 .footer-inner {
   color: var(--footer-color);
@@ -1738,9 +1758,6 @@ h5, .h5 {
   margin-top: 0; }
   .slick-carousel.slick-initialized {
     display: block; }
-  .slick-carousel .slick-carousel__item {
-    padding-left: calc(var(--bs-gutter-x) * .5);
-    padding-right: calc(var(--bs-gutter-x) * .5); }
     @media (max-width: 575.98px) {
       .slick-carousel .slick-carousel__item {
         padding-left: 8px;
@@ -3301,6 +3318,13 @@ details[open].menu-opening > .menu-drawer__submenu {
 .multi-image-with-text__inner {
   overflow: hidden; }
 
+@media(max-width: 992px) {
+  .multi-image-with-text .container-fluid {
+    padding: 0 100px;
+    margin: 0 0 70px;
+  }
+}
+
 .multi-image-with-text__wrapper {
   display: flex;
   width: 100%;
@@ -3372,6 +3396,11 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 .image-with-text__btn--style2 {
   border-radius: 30px; }
+
+.image-with-text__btn--2 {
+  background-color: #000;
+  color: #fff;
+}
 
 .testimonial__avatar .avata {
   position: relative; }

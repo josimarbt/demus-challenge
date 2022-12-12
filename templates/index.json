@@ -480,7 +480,7 @@
             "button_font_size": 18,
             "button_padding": "10px 0px",
             "margin": "10px 0px",
-            "button_color": "#ffffff",
+            "button_color": "#060606",
             "button_color_border": "#000000",
             "button_color_bg": "#000000",
             "button_color_hover": "#ffffff",
@@ -497,7 +497,7 @@
       ],
       "settings": {
         "full_with": true,
-        "color_bg": "rgba(0,0,0,0)",
+        "color_bg": "#f4efef",
         "image_bg": "shopify:\/\/shop_images\/banner-contact.webp",
         "bg_align": "center",
         "padding_block": "0px 0px",

@@ -229,7 +229,7 @@
       ],
       "settings": {
         "full_with": true,
-        "color_bg": "rgba(0,0,0,0)",
+        "color_bg": "#e3b17f",
         "padding_block": "0 0 50px",
         "margin_block": "0 0 50px",
         "heading": "",

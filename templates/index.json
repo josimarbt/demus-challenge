@@ -438,7 +438,7 @@
         "blog_comment": false,
         "blog_excerp": false,
         "blog_readmore": true,
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "crop": false,
         "blog_style": "grid",
         "navigation": true,

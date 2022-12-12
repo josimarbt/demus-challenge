@@ -3,8 +3,12 @@
     {%- render 'icons' with icon: 'user', class: 'icon user-icon', attr: 'width="20" height="20"' -%}
   </a>
   {%- if settings.user_type == "modal" -%}
-    <div class="header-cart__content">
-      <div class="ajaxcart-container" data-cart-container></div>
+    <div class="top-link__dropdown-menu">
+      <ul class="list-unstyled m-0">
+        <li class="link">
+          <a href="{{ routes.account_login_url }}">{{ section.settings.login_text | t }}</a>
+        </li>
+      </ul>
     </div>
   {%- endif -%}
 </div>

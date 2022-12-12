@@ -3,7 +3,7 @@
     <div class="container{%if section.settings.fullwidth %}-fluid{% endif %}">
 
       <div class="header__inner" {% if section.settings.padding_block != blank %} style="padding: {{ section.settings.padding_block }};"{% endif %}>
-        <div class="row g-2 py-md-3 py-lg-4 px-lg-5 align-items-center justify-content-between">
+        <div class="row g-2 py-md-3 align-items-center justify-content-between">
           <div class="header-menu-mobile d-block d-lg-none col-auto">
             <div class="d-flex d-lg-none align-items-center">
               {%- if section.settings.menu != blank -%}
@@ -103,6 +103,11 @@
         "default": true,
         "label": "Enable sticky header",
         "info": "Header shows on the screen as customers scroll up."
+      }, {
+        "type": "text",
+        "id": "login_text",
+        "label": "Login Text",
+        "default": "Iniciar Sesion"
       }
     ],
     "blocks": [

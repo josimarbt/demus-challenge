@@ -184,7 +184,7 @@
         ],
         "settings": {
           "fullwidth": true,
-          "padding_block": "20px 0px",
+          "padding_block": "24px 0px",
           "logo": "shopify:\/\/shop_images\/logo_160x_3512fbbb-936a-4a2d-a658-28adba667e1f.png",
           "logo_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0655\/9485\/1575\/files\/logo_160x.png?v=1659541581",
           "logo_width": 160,

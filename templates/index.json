@@ -510,7 +510,7 @@
         "text_align": "start",
         "banner_mobile": "always",
         "banner_url": "",
-        "padding_content": "",
+        "padding_content": "0 10px",
         "content_color_bg": "rgba(0,0,0,0)"
       }
     },

@@ -500,7 +500,7 @@
         "color_bg": "#f4efef",
         "image_bg": "shopify:\/\/shop_images\/banner-contact.webp",
         "bg_align": "center",
-        "padding_block": "0px 20px",
+        "padding_block": "0px 0px",
         "margin_block": "0 0 30px",
         "space_between": "0",
         "banner_size": 6,

@@ -425,7 +425,7 @@
       "settings": {
         "full_with": true,
         "color_bg": "rgba(0,0,0,0)",
-        "padding_block": "0px 20px",
+        "padding_block": "0px 0px",
         "margin_block": "0  0 50px",
         "heading": "Y así es como la magia sucede...",
         "sub_heading": "",

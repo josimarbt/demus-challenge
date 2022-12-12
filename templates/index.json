@@ -237,7 +237,7 @@
         "iconsize": "50x50",
         "image_ratio": "adapt",
         "crop": false,
-        "slide_enable": true,
+        "slide_enable": false,
         "navigation": false,
         "infinite": false,
         "autoplay": false,

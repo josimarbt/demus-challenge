@@ -398,7 +398,7 @@
             {%- endif -%}
           </div>
         {%- endif -%}
-        <div class=" image-with-text-content text-{{ section.settings.text_align }} col-2{% if section.settings.banner_mobile == 'hidden' %}{% else %}col-{{mobile_layout}} col-md-{{ tablet_layout }}{% endif %}">
+        <div class=" image-with-text-content text-{{ section.settings.text_align }} {% if section.settings.banner_mobile == 'hidden' %}{% else %}col-{{mobile_layout}} col-md-{{ tablet_layout }}{% endif %}">
           <div class="wrapper position-relative translate-middle-y top-50">
             {%- for block in section.blocks -%}
               {%- case block.type -%}

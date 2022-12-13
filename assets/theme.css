@@ -170,16 +170,28 @@
 .footer__center-inner {
   padding-top: 90px;
   padding-bottom: 90px; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 900.98px) {
     .footer__center-inner {
+      margin-left: 60px;
+      margin-right: 60px;
+      padding-left: 10px;
+      padding-right: 10px;
       padding-top: 60px;
       padding-bottom: 60px; }
+      .footer__center {
+        max-width: 768px;
+        margin: 0;
+      }
       .footer__center-inner > .row > .col {
         flex: 1 0 100%; } }
 
 .footer__bottom {
   background-color: var(--color-copyright-bg);
   color: var(--color-copyright); }
+
+.footer__bottom .container {
+  max-width: 800px !important;
+}
 
 /* footer-newsletter __*/
 .footer-newsletter .footer-newsletter__desc {
@@ -382,7 +394,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* component-media */
 .card__image {
-  background-size: contain;
+  background-size:cover;
   background-repeat: no-repeat;
   background-position: center center; }
   .card__image .noscript {

@@ -110,7 +110,7 @@
         "full_with": false,
         "color_bg": "rgba(0,0,0,0)",
         "padding_block": "0 0 45px",
-        "margin_block": "0 0 30px",
+        "margin_block": "0 0 10px",
         "heading": "",
         "sub_heading": "",
         "space_between": "5"
@@ -501,16 +501,16 @@
         "image_bg": "shopify:\/\/shop_images\/banner-contact.webp",
         "bg_align": "center",
         "padding_block": "0px 0px",
-        "margin_block": "0 0 30px",
+        "margin_block": "70px 0 30px",
         "space_between": "0",
-        "banner_size": 8,
+        "banner_size": 7,
         "banner_size_ipad": 6,
         "banner_size_mobile": 8,
         "banner_position": "left",
         "text_align": "start",
         "banner_mobile": "always",
         "banner_url": "",
-        "padding_content": "0 10px",
+        "padding_content": "0 0px",
         "content_color_bg": "rgba(0,0,0,0)"
       }
     },

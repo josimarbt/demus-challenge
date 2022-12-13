@@ -3422,6 +3422,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 .image-with-text__btn--2 {
   background-color: #000;
   color: #fff;
+  margin-top: 30px;
 }
 
 .image-with-text__btn--2:hover {

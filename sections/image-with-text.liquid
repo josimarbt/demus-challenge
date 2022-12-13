@@ -375,7 +375,7 @@
   class="vela-section image-with-text overflow-hidden"
   style="{{ bgColor}}{{ paddingblock }}{{ marginblock }}">
   <div class="image-with-text__inner {% if section.settings.image_bg != blank %} py-9{% endif %}" style="{{ bgImage }}">
-    <div class="container{% if section.settings.full_with %}-full{% endif %}">
+    <div class="container{% if section.settings.full_with %}-full{% endif %} py-5">
       <div class="row g-{{section.settings.space_between}}{% if section.settings.banner_position == "right" and section.settings.banner_mobile != 'hidden' %} flex-row-reverse{% endif %}">
         {%- assign desktop_layout = 12 | minus: section.settings.banner_size -%}
         {%- assign tablet_layout = 12 | minus: section.settings.banner_size_ipad -%}
@@ -384,7 +384,7 @@
           {%- assign mobile_layout = 12 -%}
         {%- endif -%}
         {%- if section.settings.banner_mobile != 'hidden' %}
-          <div class="{% if section.settings.banner_mobile == 'desktop' %} d-none d-md-block{% endif %} col-{{ section.settings.banner_size_mobile }} col-md-{{section.settings.banner_size_ipad}} col-xl-{{section.settings.banner_size}}">
+          <div class="{% if section.settings.banner_mobile == 'desktop' %} d-none d-md-block{% endif %} col-{{ section.settings.banner_size_mobile }} col-md-{{section.settings.banner_size_ipad}}">
             {%- if section.settings.banner != blank -%}
               <div class="image-with-text__banner position-relative">
                 {%- if section.settings.link != blank -%}
@@ -398,7 +398,7 @@
             {%- endif -%}
           </div>
         {%- endif -%}
-        <div class=" image-with-text-content text-{{ section.settings.text_align }} {% if section.settings.banner_mobile == 'hidden' %}col-12{% else %}col-{{mobile_layout}} col-md-{{ tablet_layout }} col-xl-3{% endif %}">
+        <div class=" image-with-text-content text-{{ section.settings.text_align }} col-2{% if section.settings.banner_mobile == 'hidden' %}{% else %}col-{{mobile_layout}} col-md-{{ tablet_layout }}{% endif %}">
           <div class="wrapper position-relative translate-middle-y top-50">
             {%- for block in section.blocks -%}
               {%- case block.type -%}

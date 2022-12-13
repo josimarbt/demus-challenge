@@ -462,7 +462,7 @@
             "text_style": "text",
             "text_color_desktop": "#000000",
             "text_font_size_desktop": 16,
-            "margin_desktop": "0 30px",
+            "margin_desktop": "",
             "text_color_tablet": "#000000",
             "text_font_size_tablet": 16,
             "margin_tablet": "",

@@ -152,7 +152,7 @@
       "settings": {
         "full_with": true,
         "color_bg": "rgba(0,0,0,0)",
-        "padding_block": "",
+        "padding_block": "0px 10px",
         "margin_block": "0 0 70px",
         "image_ratio": "adapt",
         "crop": false,

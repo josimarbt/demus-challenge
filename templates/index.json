@@ -505,7 +505,7 @@
         "space_between": "0",
         "banner_size": 9,
         "banner_size_ipad": 7,
-        "banner_size_mobile": 8,
+        "banner_size_mobile": 3,
         "banner_position": "left",
         "text_align": "start",
         "banner_mobile": "always",

@@ -190,23 +190,13 @@
           "logo_width": 160,
           "menu": "main-menu",
           "enable_sticky_header": true,
-          "login_text": "Iniciar Sesión"
+          "login_text": "Iniciar Sesión",
+          "register_text": "Registro"
         }
       },
       "footer": {
         "type": "footer",
         "blocks": {
-          "a0091743-73be-4735-b63f-79b5725ac294": {
-            "type": "newsletter",
-            "disabled": true,
-            "settings": {
-              "newsletter_bg_color": "#fcf6f2",
-              "newsletter_title": "Subscribe To Our Newsletter",
-              "newsletter_description": "",
-              "newsletter_mailchimp": false,
-              "newsletter_form_action": ""
-            }
-          },
           "eb95aebb-991a-46a6-8ccc-2a7c4ce80a1b": {
             "type": "contact_info",
             "settings": {
@@ -261,7 +251,6 @@
           }
         },
         "block_order": [
-          "a0091743-73be-4735-b63f-79b5725ac294",
           "eb95aebb-991a-46a6-8ccc-2a7c4ce80a1b",
           "70983933-17cd-45a0-bcc5-d614521caf18",
           "efc937e0-642e-4e4c-ada0-1d76f486880d",

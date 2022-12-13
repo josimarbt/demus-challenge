@@ -5,17 +5,23 @@
 {%- endif -%}
 {%- if section.settings.padding_block != blank -%}
   {%- capture paddingblock -%}
-    padding: {{section.settings.padding_block}};
+    padding: {{ section.settings.padding_block }};
   {%- endcapture -%}
 {%- endif -%}
 {%- if section.settings.margin_block != blank -%}
   {%- capture marginblock -%}
-    margin: {{section.settings.margin_block}};
+    margin: {{ section.settings.margin_block }};
   {%- endcapture -%}
 {%- endif -%}
 <section class="vela-section overflow-hidden vela-section--slideshow" style="{{ bgColor}} {{ paddingblock }} {{ marginblock }}">
   <div class="vela-slideshow__inner">
-    <div class="js-vela-slideshow vela-slideshow" data-autoplay="{{ section.settings.autoplay }}" data-autoplayinterval="{{ section.settings.autoplay_speed }}" data-navigation="{{ section.settings.navigation }}" data-pagination="{{ section.settings.pagination }}" data-fade="{{ section.settings.fade }}">
+    <div
+      class="js-vela-slideshow vela-slideshow"
+      data-autoplay="{{ section.settings.autoplay }}"
+      data-autoplayinterval="{{ section.settings.autoplay_speed }}"
+      data-navigation="{{ section.settings.navigation }}"
+      data-pagination="{{ section.settings.pagination }}"
+      data-fade="{{ section.settings.fade }}">
       {%- if section.blocks.size > 0 -%}
         {%- for block in section.blocks -%}
           <div class="vela-slideshow__item">
@@ -53,7 +59,7 @@
             {%- endif -%}
             <div class="slideshow-caption {% if block.settings.subheading == blank and block.settings.title == blank and block.settings.title2 == blank and block.settings.desc == blank and block.settings.btn_text == blank %} noCaption{% endif %}" style="background-color: {{ block.settings.content_color }}">
               <div class="container-fluid captionWrap">
-                <div class="slideshow-caption__inner {{ block.settings.alignment }} {% unless section.settings.full_with %}px-sm-2 px-md-3 px-lg-4 px-xl-5{% endunless %}">
+                <div class="slideshow-caption__inner {{ block.settings.alignment }}">
                   <div class="slideshow-caption__content text-{{ block.settings.text-alignment }} ">
                     {%- unless block.settings.subheading == blank -%}
                       <div class="slideshow-caption__subheading mb-2 {{ block.settings.subheading_font_family}} {{ block.settings.slides_effect }}-1" style="color:{{ block.settings.subheading_color }}; font-size: {{ block.settings.subheading_font_size}}px;">
@@ -77,7 +83,10 @@
                     {%- endunless -%}
                     {%- unless block.settings.btn_text == blank -%}
                       <div>
-                        <a class="slideshow-caption__btn {{ block.settings.slides_effect }}-5" href="{{ block.settings.btn_link }}" style="color: {{ block.settings.btn_text_color }};font-size: {{ block.settings.btn_font_size}}px;{% if block.settings.btn_padding != blank %}padding: {{ block.settings.btn_padding }}; {% endif %}">
+                        <a
+                          class="slideshow-caption__btn {{ block.settings.slides_effect }}-5"
+                          href="{{ block.settings.btn_link }}"
+                          style="color: {{ block.settings.btn_text_color }};font-size: {{ block.settings.btn_font_size}}px;{% if block.settings.btn_padding != blank %}padding: {{ block.settings.btn_padding }}; {% endif %}">
                           <span class="slide-btn--wrap position-absolute" style="border-color: {{ block.settings.btn_border_color }}; background-color: {{ block.settings.btn_bg_color }};"></span>
                           <span>{{ block.settings.btn_text }}</span>
                         </a>

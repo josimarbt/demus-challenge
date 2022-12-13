@@ -5,12 +5,12 @@
 {%- endif -%}
 {%- if section.settings.padding_block != blank -%}
   {%- capture paddingblock -%}
-    padding: {{section.settings.padding_block}};
+    padding: {{ section.settings.padding_block }};
   {%- endcapture -%}
 {%- endif -%}
 {%- if section.settings.margin_block != blank -%}
   {%- capture marginblock -%}
-    margin: {{section.settings.margin_block}};
+    margin: {{ section.settings.margin_block }};
   {%- endcapture -%}
 {%- endif -%}
 {%- if section.settings.image_bg != blank -%}
@@ -21,97 +21,360 @@
 {%- endif -%}
 <style>
   {%- if section.settings.content_color_bg != 'rgba(0,0,0,0)' -%}
+
+
+
     #image-with-text-{{ section.id}}.image-with-text-content {
+
+
+
       background-color: {{ section.settings.content_color_bg }};
+
+
+
     }
+
+
+
   {%- endif -%}
+
+
+
   {%- if section.settings.padding_content != blank -%}
+
+
+
     @media(min-width: 1200px) {
+
+
+
       #image-with-text-{{ section.id}}.image-with-text-content .wrapper {
+
+
+
         padding: {{ section.settings.padding_content }}}
+
+
+
     }
+
+
+
   {%- endif -%}
+
+
+
   {%- for block in section.blocks -%}
+
+
+
     {%- case block.type -%}
-    {%- when 'text' -%}
+
+
+
+      {%- when 'text' -%}
+
+
+
       {%- if block.settings.text != blank -%}
+
+
+
         #image-with-text-{{ section.id}}.image-with-text__text--{{ forloop.index}}{
+
+
+
           color: {{ block.settings.text_color_mobile }};
+
+
+
           font-size: {{ block.settings.text_font_size_mobile }}px;
+
+
+
           {%- if block.settings.margin_mobile != blank -%}
+
+
+
             margin: {{ block.settings.margin_mobile }};
+
+
+
           {%- endif -%}
+
+
+
           {%- if block.settings.padding_mobile != blank -%}
+
+
+
             padding: {{ block.settings.padding_mobile }}{%- endif -%}
+
+
+
         }
+
+
+
         @media(min-width: 768px) {
+
+
+
           #image-with-text-{{ section.id}}.image-with-text__text--{{ forloop.index}}{
+
+
+
             color: {{ block.settings.text_color_tablet }};
+
+
+
             font-size: {{ block.settings.text_font_size_tablet }}px;
+
+
+
             {%- if block.settings.margin_tablet != blank -%}
+
+
+
               margin: {{ block.settings.margin_tablet }};
+
+
+
             {%- endif -%}
+
+
+
             {%- if block.settings.padding_tablet != blank -%}
+
+
+
               padding: {{ block.settings.padding_tablet }}{%- endif -%}
+
+
+
           }
+
+
+
         }
+
+
+
         @media(min-width: 1200px) {
+
+
+
           #image-with-text-{{ section.id}}.image-with-text__text--{{ forloop.index}}{
+
+
+
             color: {{ block.settings.text_color_desktop }};
+
+
+
             font-size: {{ block.settings.text_font_size_desktop }}px;
+
+
+
             {%- if block.settings.margin_desktop != blank -%}
+
+
+
               margin: {{ block.settings.margin_desktop }};
+
+
+
             {%- endif -%}
+
+
+
             {%- if block.settings.padding_desktop != blank -%}
+
+
+
               padding: {{ block.settings.padding_desktop }}{%- endif -%}
+
+
+
           }
+
+
+
         }
-      {%- endif -%}
-    {%- when 'button' -%}
-      {%- if block.settings.button != blank -%}
-        #image-with-text-{{ section.id}}.image-with-text__btn--{{ forloop.index}}{
-          font-size: {{ block.settings.button_font_size }}px;
-          color: {{ block.settings.button_color }};
-          {%- if block.settings.button_padding != blank -%}
-            padding: {{ block.settings.button_padding }};
-          {%- endif -%}
-          {%- if block.settings.margin != blank -%}
-            margin: {{ block.settings.margin }};
-          {%- endif -%}
-          border-color: {{ block.settings.button_color_border }};
-          background-color: {{ block.settings.button_color_bg }}}
-        #image-with-text-{{ section.id}}.image-with-text__btn--{{ forloop.index}}:before {
-          content: "";
-          position: absolute;
-          left: -1px;
-          top: -1px;
-          height: calc(100% + 2px);
-          width: 0;
-          background-color: {{ block.settings.button_color_bg_hover }};
-          transition: width 0.3s ease;
-        }
-        #image-with-text-{{ section.id}}.image-with-text__btn--{{ forloop.index}}:hover {
-          color: {{ block.settings.button_color_hover }};
-        }
-        #image-with-text-{{ section.id}}.image-with-text__btn--{{ forloop.index}}:hover::before {
-          width: calc(100% + 2px);
-          border: 1px solid{{ block.settings.button_color_border_hover }};
-        }
-        @media(max-width: 768px) {
-          #image-with-text-{{ section.id}}.image-with-text__btn--{{ forloop.index}}{
-            font-size: {{ block.settings.button_font_size_mobile }}px;
-            {%- if block.settings.button_padding_mobile != blank -%}
-              padding: {{ block.settings.button_padding_mobile }};
-            {%- endif -%}
-          }
-        }
+
+
+
       {%- endif -%}
 
+
+
+      {%- when 'button' -%}
+
+
+
+      {%- if block.settings.button != blank -%}
+
+
+
+        #image-with-text-{{ section.id}}.image-with-text__btn--{{ forloop.index}}{
+
+
+
+          font-size: {{ block.settings.button_font_size }}px;
+
+
+
+          color: {{ block.settings.button_color }};
+
+
+
+          {%- if block.settings.button_padding != blank -%}
+
+
+
+            padding: {{ block.settings.button_padding }};
+
+
+
+          {%- endif -%}
+
+
+
+          {%- if block.settings.margin != blank -%}
+
+
+
+            margin: {{ block.settings.margin }};
+
+
+
+          {%- endif -%}
+
+
+
+          border-color: {{ block.settings.button_color_border }};
+
+
+
+          background-color: {{ block.settings.button_color_bg }}}
+
+
+
+        #image-with-text-{{ section.id}}.image-with-text__btn--{{ forloop.index}}:before {
+
+
+
+          content: "";
+
+
+
+          position: absolute;
+
+
+
+          left: -1px;
+
+
+
+          top: -1px;
+
+
+
+          height: calc(100% + 2px);
+
+
+
+          width: 0;
+
+
+
+          background-color: {{ block.settings.button_color_bg_hover }};
+
+
+
+          transition: width 0.3s ease;
+
+
+
+        }
+
+
+
+        #image-with-text-{{ section.id}}.image-with-text__btn--{{ forloop.index}}:hover {
+
+
+
+          color: {{ block.settings.button_color_hover }};
+
+
+
+        }
+
+
+
+        #image-with-text-{{ section.id}}.image-with-text__btn--{{ forloop.index}}:hover::before {
+
+
+
+          width: calc(100% + 2px);
+
+
+
+          border: 1px solid{{ block.settings.button_color_border_hover }};
+
+
+
+        }
+
+
+
+        @media(max-width: 768px) {
+
+
+
+          #image-with-text-{{ section.id}}.image-with-text__btn--{{ forloop.index}}{
+
+
+
+            font-size: {{ block.settings.button_font_size_mobile }}px;
+
+
+
+            {%- if block.settings.button_padding_mobile != blank -%}
+
+
+
+              padding: {{ block.settings.button_padding_mobile }};
+
+
+
+            {%- endif -%}
+
+
+
+          }
+
+
+
+        }
+
+
+
+      {%- endif -%}
+
+
+
     {%- endcase -%}
+
+
+
   {%- endfor -%}
 </style>
-<div id="image-with-text-{{section.id}}" class="vela-section image-with-text overflow-hidden" style="{{ bgColor}}{{ paddingblock }}{{ marginblock }}">
-  <div class="image-with-text__inner {% if section.settings.image_bg != blank %} py-5{% endif %}" style="{{ bgImage }}">
+<div
+  id="image-with-text-{{section.id}}"
+  class="vela-section image-with-text overflow-hidden"
+  style="{{ bgColor}}{{ paddingblock }}{{ marginblock }}">
+  <div class="image-with-text__inner {% if section.settings.image_bg != blank %} py-9{% endif %}" style="{{ bgImage }}">
     <div class="container{% if section.settings.full_with %}-full{% endif %}{% if section.settings.image_bg != blank %} my-3{% endif %}">
       <div class="row g-{{section.settings.space_between}}{% if section.settings.banner_position == "right" and section.settings.banner_mobile != 'hidden' %} flex-row-reverse{% endif %}">
         {%- assign desktop_layout = 12 | minus: section.settings.banner_size -%}
@@ -135,26 +398,30 @@
             {%- endif -%}
           </div>
         {%- endif -%}
-        <div class=" image-with-text-content text-{{ section.settings.text_align }} {% if section.settings.banner_mobile == 'hidden' %}col-12{% else %}col-{{mobile_layout}} col-md-{{ tablet_layout }} col-xl-{{desktop_layout}}{% endif %}">
+        <div class=" image-with-text-content text-{{ section.settings.text_align }} {% if section.settings.banner_mobile == 'hidden' %}col-12{% else %}col-{{mobile_layout}} col-md-{{ tablet_layout }} col-xl-3{% endif %}">
           <div class="wrapper position-relative translate-middle-y top-50">
             {%- for block in section.blocks -%}
               {%- case block.type -%}
                 {%- when 'text' -%}
-                  {%- if block.settings.text != blank -%}
-                    <div class="image-with-text__text--{{ forloop.index}} {{ block.settings.text_style }} {% if block.settings.text_style == 'ff-special' %}lh-1{% endif %}">{{ block.settings.text }}</div>
-                  {%- endif -%}
-                {%- when 'button'-%}
-                  {%- if block.settings.button != blank -%}
-                    <a class="btn position-relative image-with-text__btn--{{ forloop.index}} image-with-text__btn--{{block.settings.button_style}}" href="{{ block.settings.link }}">
-                      <span class="position-relative">{{ block.settings.button }}</span>
-                    </a>
-                  {%- endif -%}
-                {%- when 'image'-%}
-                  {%- if block.settings.image != blank -%}
-                    <div class="image-with-text__image" {% if block.settings.margin != blank %}style="margin: {{ block.settings.margin }};"{% endif %}>
-                      <span class="d-inline-block" style="max-width: {{ block.settings. width}}%;"><img class="img-fluid lazyload" data-sizes="auto" data-aspectratio="{{ block.settings.image.ratio }}" data-src={{ block.settings.image | img_url: 'master' }}/></span>
-                    </div>
-                  {%- endif -%}
+                {%- if block.settings.text != blank -%}
+                  <div class="image-with-text__text--{{ forloop.index}} {{ block.settings.text_style }} {% if block.settings.text_style == 'ff-special' %}lh-1{% endif %}">{{ block.settings.text }}</div>
+                {%- endif -%}
+                {%- when 'button' -%}
+                {%- if block.settings.button != blank -%}
+                  <a class="btn position-relative image-with-text__btn--{{ forloop.index}} image-with-text__btn--{{block.settings.button_style}}" href="{{ block.settings.link }}">
+                    <span class="position-relative">{{ block.settings.button }}</span>
+                  </a>
+                {%- endif -%}
+                {%- when 'image' -%}
+                {%- if block.settings.image != blank -%}
+                  <div class="image-with-text__image" {% if block.settings.margin != blank %}style="margin: {{ block.settings.margin }};"{% endif %}>
+                    <span class="d-inline-block" style="max-width: {{ block.settings. width}}%;"><img
+                        class="img-fluid lazyload"
+                        data-sizes="auto"
+                        data-aspectratio="{{ block.settings.image.ratio }}"
+                        data-src={{ block.settings.image | img_url: 'master' }} /></span>
+                  </div>
+                {%- endif -%}
               {%- endcase -%}
             {%- endfor -%}
           </div>

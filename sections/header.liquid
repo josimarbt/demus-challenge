@@ -1,15 +1,28 @@
 <header class="header">
-  <div data-section-id="header" data-section-type="header-section" class="header-wrap{% if section.settings.enable_sticky_header %} sticky-header{% endif %}">
+  <div
+    data-section-id="header"
+    data-section-type="header-section"
+    class="header-wrap{% if section.settings.enable_sticky_header %} sticky-header{% endif %}">
     <div class="container{%if section.settings.fullwidth %}-fluid{% endif %}">
 
-      <div class="header__inner" {% if section.settings.padding_block != blank %} style="padding: {{ section.settings.padding_block }};"{% endif %}>
+      <div
+        class="header__inner px-lg-5"
+        {% if section.settings.padding_block != blank %}
+        style="padding: {{ section.settings.padding_block }};"
+        {% endif %}>
         <div class="row g-2 py-md-3 align-items-center justify-content-between">
           <div class="header-menu-mobile d-block d-lg-none col-auto">
             <div class="d-flex d-lg-none align-items-center">
               {%- if section.settings.menu != blank -%}
                 {%- render 'header-menu-mobile' -%}
               {%- endif -%}
-              <a class="header__icon header__icon--search modal__toggle ms-2 ms-md-4 d-flex" href="#searchTop" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="searchTop">
+              <a
+                class="header__icon header__icon--search modal__toggle ms-2 ms-md-4 d-flex"
+                href="#searchTop"
+                role="button"
+                data-bs-toggle="collapse"
+                aria-expanded="false"
+                aria-controls="searchTop">
                 {% render 'icons', icon: 'search', class: 'modal__toggle-open icon icon-search', attr: 'width="20" height="20"' %}
               </a>
             </div>
@@ -23,10 +36,17 @@
                 {%- assign logo_size = section.settings.logo_width | append: 'x' -%}
                 {%- assign size_rentina = section.settings.logo_width | times: 2 -%}
                 {%- if section.settings.logo_svg != blank -%}
-                  <img class="img-fluid" src="{{ section.settings.logo_svg }}" alt="{{ shop.name }}"/>
+                  <img
+                    class="img-fluid"
+                    src="{{ section.settings.logo_svg }}"
+                    alt="{{ shop.name }}" />
                 {%- elsif section.settings.logo -%}
-                  <img class="header__heading-logo img-fluid" {% unless section.settings.logo.width < size_rentina %}srcset="{{ section.settings.logo | img_url: logo_size }} 1x, {{ section.settings.logo | img_url: 'medium' }} 2x" {% endunless %}
-                    src="{{ section.settings.logo | img_url: logo_size }}" loading="lazy" alt="{{ section.settings.logo.alt | default: shop.name | escape }}">
+                  <img
+                    class="header__heading-logo img-fluid"
+                    {% unless section.settings.logo.width < size_rentina %}srcset="{{ section.settings.logo | img_url: logo_size }} 1x, {{ section.settings.logo | img_url: 'medium' }} 2x"{% endunless %}
+                    src="{{ section.settings.logo | img_url: logo_size }}"
+                    loading="lazy"
+                    alt="{{ section.settings.logo.alt | default: shop.name | escape }}">
                 {%- else -%}
                   <span class="h2">{{ shop.name }}</span>
                 {%- endif -%}
@@ -43,7 +63,13 @@
           <div class="header-right d-flex align-items-center col-auto">
 
             <div class="header__search d-none d-lg-block">
-              <a class="header__icon header__icon--search modal__toggle" href="#searchTop" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="searchTop">
+              <a
+                class="header__icon header__icon--search modal__toggle"
+                href="#searchTop"
+                role="button"
+                data-bs-toggle="collapse"
+                aria-expanded="false"
+                aria-controls="searchTop">
                 {% render 'icons', icon: 'search', class: 'modal__toggle-open icon icon-search', attr: 'width="20" height="20"' %}
               </a>
             </div>

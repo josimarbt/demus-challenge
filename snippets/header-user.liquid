@@ -1,0 +1,17 @@
+<div class="header-user ms-3 ms-md-4">
+  <a class="header__icon d-flex position-relative" id="user-icon-bubble">
+    {%- render 'icons' with icon: 'user', class: 'icon user-icon', attr: 'width="20" height="20"' -%}
+  </a>
+  <div hidden class="top-link__dropdown-menu">
+    <div onclick="hidden = false">
+      <ul class="list-unstyled m-0">
+        <li class="user-header-login">
+          <a href="{{ routes.account_login_url }}">{{ section.settings.login_text }}</a>
+        </li>
+        <li class="user-header-register">
+          <a href="{{ routes.account_register_url }}">{{ section.settings.register_text }}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -152,7 +152,7 @@
       "settings": {
         "full_with": true,
         "color_bg": "rgba(0,0,0,0)",
-        "padding_block": "",
+        "padding_block": "0px 10px",
         "margin_block": "0 0 70px",
         "image_ratio": "adapt",
         "crop": false,
@@ -230,8 +230,8 @@
       "settings": {
         "full_with": true,
         "color_bg": "#fbf7f4",
-        "padding_block": "30px 0 50px",
-        "margin_block": "0 0 70px",
+        "padding_block": "50px 0 50px",
+        "margin_block": "0px 0 70px",
         "heading": "",
         "sub_heading": "",
         "iconsize": "50x50",
@@ -505,7 +505,7 @@
         "space_between": "0",
         "banner_size": 9,
         "banner_size_ipad": 7,
-        "banner_size_mobile": 8,
+        "banner_size_mobile": 2,
         "banner_position": "left",
         "text_align": "start",
         "banner_mobile": "always",

@@ -23,7 +23,7 @@
                                             {%- assign proCollection1 = section.settings.collection_handle1 -%}
                                             <a class="collection-three__image collection-effect__image" href="{% if proCollection1 != blank %}{{ collections[proCollection1].url }}{% else %}#{% endif %}" title="{{ section.settings.title1 }}">
                                                 {% if section.settings.single_images1 != blank %}
-                                                    {% include 'img-global' with image: section.settings.single_images1 %}
+                                                    {% include 'img-global' with image, image: section.settings.single_images1 %}
                                                 {% else %}
                                                     <img class="img-fluid" alt="{{ shop.name }}" src="https://via.placeholder.com/580x620.jpg" />
                                                 {% endif %}
@@ -52,7 +52,7 @@
                                             {%- assign proCollection2 = section.settings.collection_handle2 -%}
                                             <a class="collection-three__image collection-effect__image" href="{% if proCollection2 != blank %}{{ collections[proCollection2].url }}{% else %}#{% endif %}" title="{{ section.settings.title2 }}">
                                                 {% if section.settings.single_images2 != blank %}
-                                                    {% include 'img-global' with image: section.settings.single_images2 %}
+                                                    {% include 'img-global' with image, image: section.settings.single_images2 %}
                                                 {% else %}
                                                     <img class="img-fluid" alt="{{ shop.name }}" src="https://via.placeholder.com/500x500.jpg" />
                                                 {% endif %}
@@ -83,7 +83,7 @@
                                 {%- assign proCollection3 = section.settings.collection_handle3 -%}
                                 <a class="collection-three__image collection-effect__image" href="{% if proCollection3 != blank %}{{ collections[proCollection3].url }}{% else %}#{% endif %}" title="{{ section.settings.title3 }}">
                                     {% if section.settings.single_images3 != blank %}
-                                        {% include 'img-global' with image: section.settings.single_images3 %}
+                                        {% include 'img-global' with image, image: section.settings.single_images3 %}
                                     {% else %}
                                         <img class="img-fluid" alt="{{ shop.name }}" src="https://via.placeholder.com/580x850.jpg" />
                                     {% endif %}
@@ -233,4 +233,22 @@
             }
         ]
     }
-{% endschema %}
+{% endschema %}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% include 'img-global' with image: section.settings.single_images1 %}"
+  to: "{% include 'img-global' with image, image: section.settings.single_images1
+    %}"
+  position: 1824..1901
+- from: "{% include 'img-global' with image: section.settings.single_images2 %}"
+  to: "{% include 'img-global' with image, image: section.settings.single_images2
+    %}"
+  position: 4968..5045
+- from: "{% include 'img-global' with image: section.settings.single_images3 %}"
+  to: "{% include 'img-global' with image, image: section.settings.single_images3
+    %}"
+  position: 8044..8121
+{%- endcomment -%}

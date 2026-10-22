@@ -5,7 +5,7 @@
 {%- assign register = 'customer.registration' | t -%}
 <div class="velaTopLinks ms-lg-4">
   <div class="top-link__title header__icon d-flex align-items-center justify-content-end flex-wrap">
-    {%- render 'icons' with icon: 'user', class: 'icon icon-user', attr: 'width="20" height="20"' -%}
+    {%- render 'icons' with icon, icon: 'user', class: 'icon icon-user', attr: 'width="20" height="20"' -%}
   </div>
   <div class="top-link__dropdown-menu">
     <ul class="list-unstyled m-0">
@@ -20,4 +20,15 @@
       {% endif %}
     </ul>
   </div>
-</div>
+</div>{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: '{%- render ''icons'' with icon: ''user'', class: ''icon icon-user'', attr:
+    ''width="20" height="20"'' -%}'
+  to: '{%- render ''icons'' with icon, icon: ''user'', class: ''icon icon-user'',
+    attr: ''width="20" height="20"'' -%}'
+  position: 357..460
+{%- endcomment -%}

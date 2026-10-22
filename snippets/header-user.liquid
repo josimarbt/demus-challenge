@@ -1,6 +1,6 @@
 <div class="header-user ms-3 ms-md-4">
   <a class="header__icon d-flex position-relative" id="user-icon-bubble">
-    {%- render 'icons' with icon: 'user', class: 'icon user-icon', attr: 'width="20" height="20"' -%}
+    {%- render 'icons' with icon, icon: 'user', class: 'icon user-icon', attr: 'width="20" height="20"' -%}
   </a>
   <div hidden class="top-link__dropdown-menu">
     <div onclick="hidden = false">
@@ -14,4 +14,15 @@
       </ul>
     </div>
   </div>
-</div>
+</div>{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: '{%- render ''icons'' with icon: ''user'', class: ''icon user-icon'', attr:
+    ''width="20" height="20"'' -%}'
+  to: '{%- render ''icons'' with icon, icon: ''user'', class: ''icon user-icon'',
+    attr: ''width="20" height="20"'' -%}'
+  position: 117..220
+{%- endcomment -%}

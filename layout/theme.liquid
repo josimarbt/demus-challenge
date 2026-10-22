@@ -96,7 +96,7 @@
           id="whatsapp-bubble"
           href="https://wa.me/525510496746"
           target="_blank">
-          {%- render 'icons' with icon: 'whatsapp', class: 'icon icon-wsp', attr: 'width="24" height="28"' -%}
+          {%- render 'icons' with icon, icon: 'whatsapp', class: 'icon icon-wsp', attr: 'width="24" height="28"' -%}
         </a>
       </div>
       <div class="main-content__inner">
@@ -118,4 +118,15 @@
       };
     </script>
   </body>
-</html>
+</html>{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: '{%- render ''icons'' with icon: ''whatsapp'', class: ''icon icon-wsp'', attr:
+    ''width="24" height="28"'' -%}'
+  to: '{%- render ''icons'' with icon, icon: ''whatsapp'', class: ''icon icon-wsp'',
+    attr: ''width="24" height="28"'' -%}'
+  position: 3255..3361
+{%- endcomment -%}

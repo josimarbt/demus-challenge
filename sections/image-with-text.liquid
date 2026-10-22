@@ -390,7 +390,7 @@
                 {%- if section.settings.link != blank -%}
                   <a href="{{ section.settings.link }}">
                   {%- endif -%}
-                  {% include 'img-global' with image: section.settings.banner %}
+                  {% include 'img-global' with image, image: section.settings.banner %}
                   {%- if section.settings.link != blank -%}
                   </a>
                 {%- endif -%}
@@ -858,4 +858,13 @@
       }
     ]
   }
-{% endschema %}
+{% endschema %}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% include 'img-global' with image: section.settings.banner %}"
+  to: "{% include 'img-global' with image, image: section.settings.banner %}"
+  position: 6542..6611
+{%- endcomment -%}

@@ -1,6 +1,6 @@
 <div class="header-cart ms-3 ms-md-4 {% unless template == 'cart' %} cart-hover{% endunless %}">
   <a class="{% unless template == 'cart' %}js-header-cart{% endunless %} header__icon d-flex position-relative pe-2" href="javascript:void(0)" id="cart-icon-bubble">
-    {%- render 'icons' with icon: 'shopping-cart', class: 'icon icon-cart', attr: 'width="22.5" height="20"' -%}
+    {%- render 'icons' with icon, icon: 'shopping-cart', class: 'icon icon-cart', attr: 'width="22.5" height="20"' -%}
     <span class="header-cart__span d-none">{{ 'general.cart.cart_title' | t }}</span>
     <span class="header-cart__count cart-count-bubble rounded-circle" data-cart-count>{{ cart.item_count }}</span>
     <span class="header-cart__span d-none">{{ 'general.cart.cart_items_count' | t:count:cart.item_count }}</span>
@@ -12,3 +12,15 @@
     </div>
   {%- endif -%}
 </div>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: '{%- render ''icons'' with icon: ''shopping-cart'', class: ''icon icon-cart'',
+    attr: ''width="22.5" height="20"'' -%}'
+  to: '{%- render ''icons'' with icon, icon: ''shopping-cart'', class: ''icon icon-cart'',
+    attr: ''width="22.5" height="20"'' -%}'
+  position: 267..381
+{% endcomment %}

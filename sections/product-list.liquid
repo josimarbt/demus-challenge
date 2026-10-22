@@ -52,7 +52,7 @@
                             {%- for product in collections[proCollection].products limit: proLimit -%}
                                 <div class="slick-carousel__item">
                                     {%- if section.settings.product_style == "list" -%}
-                                        {% include 'product-list-style' with rating: 'show' %}
+                                        {% include 'product-list-style' with rating, rating: 'show' %}
                                     {%- else -%}
                                         {% include 'product-grid-item' %}
                                     {%- endif -%}
@@ -71,7 +71,7 @@
                             {% for product in collections[proCollection].products limit: proLimit %}
                                 <div class="{{ strGridItem }}">
                                     {%- if section.settings.product_style == "list" -%}
-                                        {% include 'product-list-style' with rating: 'show' %}
+                                        {% include 'product-list-style' with rating, rating: 'show' %}
                                     {%- else -%}
                                         {% include 'product-grid-item' %}
                                     {%- endif -%}
@@ -265,4 +265,16 @@
             }
         ]
     }
-{% endschema %}
+{% endschema %}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% include 'product-list-style' with rating: 'show' %}"
+  to: "{% include 'product-list-style' with rating, rating: 'show' %}"
+  position: 3031..3093
+- from: "{% include 'product-list-style' with rating: 'show' %}"
+  to: "{% include 'product-list-style' with rating, rating: 'show' %}"
+  position: 4343..4405
+{%- endcomment -%}

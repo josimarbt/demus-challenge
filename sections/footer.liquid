@@ -80,7 +80,7 @@
                                     title="{{ shop.name }}"
                                     target="_blank">
                                   {%- endif -%}
-                                  {% include 'img-global' with image: block.settings[image_item] %}
+                                  {% include 'img-global' with image, image: block.settings[image_item] %}
                                   {%- if block.settings[image_url] != blank -%}
                                   </a>
                                 {%- endif -%}
@@ -524,4 +524,13 @@
       }
     ]
   }
-{% endschema %}
+{% endschema %}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% include 'img-global' with image: block.settings[image_item] %}"
+  to: "{% include 'img-global' with image, image: block.settings[image_item] %}"
+  position: 4991..5063
+{%- endcomment -%}

@@ -161,7 +161,7 @@
                         <div class="container-full position-absolute left-0 top-0 w-100 d-none d-xl-block">
                             <div class="row g-0 justify-content-start">
                                 <div class="col-12 col-xl-5">
-                                        {% include 'img-global' with image: section.settings.image %}
+                                        {% include 'img-global' with image, image: section.settings.image %}
                                 </div>
                             </div>
                         </div>
@@ -277,3 +277,13 @@
         ]
   	}
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% include 'img-global' with image: section.settings.image %}"
+  to: "{% include 'img-global' with image, image: section.settings.image %}"
+  position: 12538..12606
+{% endcomment %}
